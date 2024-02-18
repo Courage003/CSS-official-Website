@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Sidemenu from "./Sidemenu";
 
 function Header() {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
   return (
-    <header className="bg-white">
-      <div className="mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <header className="sticky top-0 z-50 bg-transparent">
+      <div className="relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
           <div className="flex-1 md:flex md:items-center md:gap-12">
             <a className="block text-teal-600" href="#">
@@ -23,7 +23,7 @@ function Header() {
               <ul className="flex items-center gap-6 text-sm lg:text-lg">
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className="text-gray-800 transition hover:text-gray-800/75"
                     href="#"
                   >
                     {" "}
@@ -33,7 +33,7 @@ function Header() {
 
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className="text-gray-800 transition hover:text-gray-800/75"
                     href="#"
                   >
                     {" "}
@@ -43,7 +43,7 @@ function Header() {
 
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className="text-gray-800 transition hover:text-gray-800/75"
                     href="#"
                   >
                     {" "}
@@ -53,7 +53,7 @@ function Header() {
 
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className="text-gray-800 transition hover:text-gray-800/75"
                     href="#"
                   >
                     {" "}
@@ -63,7 +63,7 @@ function Header() {
 
                 <li>
                   <a
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className="text-gray-800 transition hover:text-gray-800/75"
                     href="#"
                   >
                     {" "}
@@ -94,7 +94,9 @@ function Header() {
 
               <div className="block md:hidden">
                 <button
-                  onClick={() => {setOpen(!open)}}
+                  onClick={() => {
+                    setOpen(!open);
+                  }}
                   className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
                 >
                   <svg
@@ -115,7 +117,7 @@ function Header() {
               </div>
             </div>
             <div
-              className={`dark:bg-dark-2 absolute right-4 top-full w-full max-w-[250px] rounded-lg bg-white px-6 py-5 shadow lg:w-full lg:max-w-full lg:shadow-none lg:dark:bg-transparent ${!open && "hidden"} `}
+              className={`dark:bg-dark-2 absolute right-4 top-full w-full max-w-[250px] rounded-lg border bg-white px-6 py-3 shadow lg:w-full lg:max-w-full lg:shadow-none lg:dark:bg-transparent ${!open && "hidden"} `}
             >
               <Sidemenu />
             </div>

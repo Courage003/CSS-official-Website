@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Sidemenu() {
   return (
-    <ul className="space-y-1">
+    <ul className="space-y-1 ">
       <li>
         <a
           href="#"
