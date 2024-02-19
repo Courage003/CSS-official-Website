@@ -4,14 +4,14 @@ import Sidemenu from "./Sidemenu";
 function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-50 bg-transparent">
+    <header className="sticky top-0 z-50 md:backdrop-blur-sm md:bg-gray-500 md:bg-opacity-10 ">
       <div className="relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
           <div className="flex-1 md:flex md:items-center md:gap-12">
             <a className="block text-teal-600" href="#">
               <span className="sr-only">Home</span>
               <img
-                src="src\assets\jj.jpg"
+                src="src/assets/jj.jpg"
                 alt="Logo"
                 className="h-10 w-auto rounded-full lg:h-14"
               />
@@ -23,7 +23,7 @@ function Header() {
               <ul className="flex items-center gap-6 text-sm lg:text-lg">
                 <li>
                   <a
-                    className="text-gray-800 transition hover:text-gray-800/75"
+                    className="text-zinc-800 transition hover:text-zinc-800/75"
                     href="#"
                   >
                     {" "}
@@ -33,7 +33,7 @@ function Header() {
 
                 <li>
                   <a
-                    className="text-gray-800 transition hover:text-gray-800/75"
+                    className="text-zinc-800 transition hover:text-zinc-800/75"
                     href="#"
                   >
                     {" "}
@@ -43,7 +43,7 @@ function Header() {
 
                 <li>
                   <a
-                    className="text-gray-800 transition hover:text-gray-800/75"
+                    className="text-zinc-800 transition hover:text-zinc-800/75"
                     href="#"
                   >
                     {" "}
@@ -53,7 +53,7 @@ function Header() {
 
                 <li>
                   <a
-                    className="text-gray-800 transition hover:text-gray-800/75"
+                    className="text-zinc-800 transition hover:text-zinc-800/75"
                     href="#"
                   >
                     {" "}
@@ -63,7 +63,7 @@ function Header() {
 
                 <li>
                   <a
-                    className="text-gray-800 transition hover:text-gray-800/75"
+                    className="text-zinc-800 transition hover:text-zinc-800/75"
                     href="#"
                   >
                     {" "}
