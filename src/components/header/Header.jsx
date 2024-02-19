@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Sidemenu from "./Sidemenu";
 
-const logo = "src/assets/jj.jpg";
+const logo = "src/assets/logo.jpg";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -40,16 +40,6 @@ function Header() {
                   >
                     {" "}
                     Career and Exams{" "}
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    className="text-zinc-800 transition hover:text-zinc-800/75"
-                    href="#"
-                  >
-                    {" "}
-                    History{" "}
                   </a>
                 </li>
 
