@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Sidemenu from "./Sidemenu";
 
+const logo = "src/assets/jj.jpg";
+
 function Header() {
   const [open, setOpen] = useState(false);
   return (
@@ -8,10 +10,10 @@ function Header() {
       <div className="relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
           <div className="flex-1 md:flex md:items-center md:gap-12">
-            <a className="block text-teal-600" href="#">
+            <a className="block text-teal-600" href="/">
               <span className="sr-only">Home</span>
               <img
-                src="src/assets/jj.jpg"
+                src={logo}
                 alt="Logo"
                 className="h-10 w-auto rounded-full lg:h-14"
               />
