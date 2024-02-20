@@ -5,30 +5,30 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const [open, setOpen] = useState(false);
-  // const sidemenuRef = useRef(null);
+  const sidemenuRef = useRef(null);
 
-  // useEffect(() => {
-  //   const handleOutsideClick = (event) => {
-  //     if (
-  //       !event.target.closest(".block.md\\:hidden") &&
-  //       !event.target.closest(".dark\\:bg-dark-2")
-  //     ) {
-  //       setOpen(false);
-  //     }
-  //   };
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (
+        !event.target.closest(".block.md\\:hidden") &&
+        !event.target.closest(".dark\\:bg-dark-2")
+      ) {
+        setOpen(false);
+      }
+    };
 
-  //   document.body.addEventListener("click", handleOutsideClick);
+    document.body.addEventListener("click", handleOutsideClick);
 
-  //   return () => {
-  //     document.body.removeEventListener("click", handleOutsideClick);
-  //   };
-  // }, []);
+    return () => {
+      document.body.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
 
-  const handleToggleMenu = () => {
-    setOpen(!open);
+  const handleSidemenuMouseEnter = () => {
+    setOpen(true);
   };
 
-  const handleCloseMenu = () => {
+  const handleSidemenuMouseLeave = () => {
     setOpen(false);
   };
 
@@ -113,7 +113,9 @@ function Header() {
 
               <div className="block md:hidden">
                 <button
-                  onClick={handleToggleMenu}
+                  onClick={() => {
+                    setOpen(!open);
+                  }}
                   className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75"
                 >
                   <svg
@@ -133,17 +135,14 @@ function Header() {
                 </button>
               </div>
             </div>
-            {
-              open && (
-                <div
-                onMouseLeave={handleCloseMenu}
-                className="dark:bg-dark-2 absolute right-4 top-full w-full max-w-[250px] rounded-lg border bg-white px-6 py-3 shadow lg:w-full lg:max-w-full lg:shadow-none lg:dark:bg-transparent"
-              >
-                <Sidemenu />
-              </div>
-              )
-            }
-          
+            <div
+              ref={sidemenuRef}
+              onMouseEnter={handleSidemenuMouseEnter}
+              onMouseLeave={handleSidemenuMouseLeave}
+              className={`dark:bg-dark-2 absolute right-4 top-full w-full max-w-[250px] rounded-lg border bg-white px-6 py-3 shadow lg:w-full lg:max-w-full lg:shadow-none lg:dark:bg-transparent ${!open && "hidden"} `}
+            >
+              <Sidemenu />
+            </div>
           </div>
         </div>
       </div>
