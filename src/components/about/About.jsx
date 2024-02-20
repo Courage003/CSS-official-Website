@@ -15,7 +15,7 @@ export default function About() {
                     </div>
                     <div className="w-1/2 ml-1 flex flex-col justify-center items-center">
                         <h4 className="text-6xl text-center font-bold">Who We Are ?</h4>
-                        <p className="leading-5 text-lg pt-4 w-fit ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sed quidem aspernatur laboriosam, earum ipsam enim velit repellendus eius, provident ullam doloremque aperiam error officia porro molestias quisquam dolore placeat vero consequatur sint dignissimos veritatis. Vero exercitationem eius, consequatur rerum quis quibusdam deleniti optio ipsam deserunt est magni autem repudiandae maxime similique quos quidem, minima perferendis voluptatibus possimus, dolorum et laudantium minus. Fugiat assumenda molestias doloribus natus delectus, enim repellendus?</p>
+                        <p className="leading-5 text-lg pt-4 w-fit ">Civil Service Society, NIT Agartala serves as a dynamic platform for impassioned students to rigorously examine, deliberate upon, and actively engage with current public Policy and governance issues. Encouraging critical thinking and fostering innovative ideation, we foster collaborative efforts among students. Our overarching goal is to empower students with the requisite knowledge, skills, and resources to effectuate meaningful change in the realm of public service. Through robust discourse and concerted action, we endeavor to cultivate future leaders dedicated to shaping a more informed, effective, and equitable governance landscape.</p>
                 <br/>
                 <br/>
                 <br/>

@@ -1,7 +1,7 @@
 import React from "react";
+import backVideo from "../assets/home_page__video.mp4"
 
 function Home() {
-  const img = "src/assets/home_page__video.mp4";
   return (
     <div className="hero min-h-screen">
       <div
@@ -9,7 +9,7 @@ function Home() {
         items-center justify-center overflow-hidden font-inter text-white flex-col"
       >
         <video
-          src={img}
+          src={backVideo}
           autoPlay="{true}"
           loop
           muted

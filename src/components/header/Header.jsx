@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Sidemenu from "./Sidemenu";
-import logo from "../../assets/logo.jpg"
+import logo from "../../assets/logo.jpg";
+import { Link } from "react-router-dom";
 
 
 function Header() {
@@ -24,23 +25,21 @@ function Header() {
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm lg:text-lg">
                 <li>
-                  <a
+                  <Link to="/about"
                     className="text-zinc-800 transition hover:text-zinc-800/75"
-                    href="#"
                   >
                     {" "}
                     About Us{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link to="carrer"
                     className="text-zinc-800 transition hover:text-zinc-800/75"
-                    href="#"
                   >
                     {" "}
                     Career and Exams{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
