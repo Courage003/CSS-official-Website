@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section className="container w-full transition">
       <div
-        className="mb-12 w-full p-20 text-center text-white"
+        className="mb-12 w-screen p-20 text-center text-white"
         style={{ background: "#000" }}
       >
         <h4 className="text-4xl font-bold">#KnowUs</h4>
