@@ -1,14 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Sidemenu from "./Sidemenu";
 import logo from "../../assets/logo.jpg";
 import { Link } from "react-router-dom";
 
-
 function Header() {
   const [open, setOpen] = useState(false);
+  const sidemenuRef = useRef(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (
+        !event.target.closest(".block.md\\:hidden") &&
+        !event.target.closest(".dark\\:bg-dark-2")
+      ) {
+        setOpen(false);
+      }
+    };
+
+    document.body.addEventListener("click", handleOutsideClick);
+
+    return () => {
+      document.body.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
+
+  const handleSidemenuMouseEnter = () => {
+    setOpen(true);
+  };
+
+  const handleSidemenuMouseLeave = () => {
+    setOpen(false);
+  };
 
   return (
-    <header className="sticky top-0 z-50 md:backdrop-blur-sm md:bg-gray-500 md:bg-opacity-10 ">
+    <header className="sticky top-0 z-50 md:bg-gray-500 md:bg-opacity-10 md:backdrop-blur-sm ">
       <div className="relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
           <div className="flex-1 md:flex md:items-center md:gap-12">
@@ -26,7 +51,8 @@ function Header() {
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm lg:text-lg">
                 <li>
-                  <Link to="/about"
+                  <Link
+                    to="/about"
                     className="text-zinc-800 transition hover:text-zinc-800/75"
                   >
                     {" "}
@@ -35,7 +61,8 @@ function Header() {
                 </li>
 
                 <li>
-                  <Link to="/career"
+                  <Link
+                    to="/career"
                     className="text-zinc-800 transition hover:text-zinc-800/75"
                   >
                     {" "}
@@ -109,6 +136,9 @@ function Header() {
               </div>
             </div>
             <div
+              ref={sidemenuRef}
+              onMouseEnter={handleSidemenuMouseEnter}
+              onMouseLeave={handleSidemenuMouseLeave}
               className={`dark:bg-dark-2 absolute right-4 top-full w-full max-w-[250px] rounded-lg border bg-white px-6 py-3 shadow lg:w-full lg:max-w-full lg:shadow-none lg:dark:bg-transparent ${!open && "hidden"} `}
             >
               <Sidemenu />
