@@ -4,15 +4,15 @@ import Card from "../UI/Card";
 
 export default function About() {
   return (
-    <section className="container w-screen transition">
+    <section className=" hero mx-auto ">
       <div
-        className="mb-12 w-screen p-20 text-center text-white"
+        className="mb-12 w-full p-20 text-center text-white"
         style={{ background: "#000" }}
       >
         <h4 className="text-4xl font-bold">#KnowUs</h4>
         <p>EMPOWER. INSPIRE. TRANSFORM.</p>
       </div>
-      <div className="w-screen">
+      <div className="">
         <div className="mb-20 flex flex-col items-center justify-center lg:flex-row">
           <div className="m-10 rounded-lg lg:ml-8 lg:mr-4 lg:w-1/2">
             <img src={grp} alt="grpPhoto" style={{ borderRadius: "12px" }} />
