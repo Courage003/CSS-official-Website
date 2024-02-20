@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const [open, setOpen] = useState(false);
+
   return (
     <header className="sticky top-0 z-50 md:backdrop-blur-sm md:bg-gray-500 md:bg-opacity-10 ">
       <div className="relative mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,7 +35,7 @@ function Header() {
                 </li>
 
                 <li>
-                  <Link to="/carrer"
+                  <Link to="/career"
                     className="text-zinc-800 transition hover:text-zinc-800/75"
                   >
                     {" "}
