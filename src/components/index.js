@@ -3,6 +3,7 @@ import Footer from "./footer/Footer";
 import Loading from "./Loading";
 import Sidemenu from "./header/Sidemenu";
 import Home from "./Home";
+import About from "./about/About";
 
 
 
@@ -12,6 +13,7 @@ export {
     Loading,
     Sidemenu,
     Home,
+    About
     
     
     

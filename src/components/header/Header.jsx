@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Sidemenu from "./Sidemenu";
-
-const logo = "src/assets/logo.jpg";
+import logo from "../../assets/logo.jpg"
 
 
 function Header() {
@@ -14,7 +13,7 @@ function Header() {
             <a className="block text-teal-600" href="/">
               <span className="sr-only">Home</span>
               <img
-                src="src/assets/logo.jpg"
+                src={logo}
                 alt="Logo"
                 className="h-10 w-auto rounded-full lg:h-14"
               />
