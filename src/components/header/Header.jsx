@@ -53,7 +53,7 @@ function Header() {
                 <li>
                   <Link
                     to="/about"
-                    className="text-zinc-800 transition hover:text-zinc-800/75"
+                    className="text-zinc-800 transition hover:text-zinc-800/75 hover:drop-shadow-[1px_0px_0px_#ffffff]"
                   >
                     {" "}
                     About Us{" "}
@@ -63,7 +63,7 @@ function Header() {
                 <li>
                   <Link
                     to="/career"
-                    className="text-zinc-800 transition hover:text-zinc-800/75"
+                    className="text-zinc-800 transition hover:text-zinc-800/75 hover:drop-shadow-[1px_0px_0px_#ffffff]"
                   >
                     {" "}
                     Career and Exams{" "}
@@ -72,7 +72,7 @@ function Header() {
 
                 <li>
                   <Link
-                    className="text-zinc-800 transition hover:text-zinc-800/75"
+                    className="text-zinc-800 transition hover:text-zinc-800/75 hover:drop-shadow-[1px_0px_0px_#ffffff]"
                     to="/resources"
                   >
                     {" "}
@@ -82,7 +82,7 @@ function Header() {
 
                 <li>
                   <Link
-                    className="text-zinc-800 transition hover:text-zinc-800/75"
+                    className="text-zinc-800 transition hover:text-zinc-800/75 hover:drop-shadow-[1px_0px_0px_#ffffff]"
                     to="/events"
                   >
                     {" "}
