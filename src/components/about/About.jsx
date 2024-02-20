@@ -1,5 +1,6 @@
 import React from "react";
 import grp from "../../assets/grpPhoto.jpg";
+import Card from "../UI/Card";
 
 export default function About() {
   return (
@@ -12,13 +13,13 @@ export default function About() {
         <p>
         EMPOWER. INSPIRE. TRANSFORM.
         </p>
-      </div>
-      <div className="w-screen">
+        </div>
+        <div className="w-screen">
         <div className="mb-20 flex items-center justify-center flex-col lg:flex-row">
-          <div className="m-12 lg:ml-8 lg:mr-4 rounded-lg lg:w-1/2">
+            <div className="m-12 lg:ml-8 lg:mr-4 rounded-lg lg:w-1/2">
             <img src={grp} alt="grpPhoto" style={{ borderRadius: "12px" }} />
-          </div>
-          <div className="ml-1 flex lg:w-1/2 flex-col items-center justify-center">
+            </div>
+            <div className="ml-1 flex lg:w-1/2 flex-col items-center justify-center">
             <h4 className="text-center text-4xl font-bold">Who We Are ?</h4>
             <p className="tracking-lg w-fit px-16 lg:px-12 lg:pr-16 pt-4 text-lg leading-6 ">
                 Civil Service Society, NIT Agartala serves as a dynamic platform
@@ -44,9 +45,10 @@ export default function About() {
         </div>
         </div>
 
-      <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
         <h1 className="text-5xl font-semibold underline">Our Teams</h1>
-      </div>
+        <Card/>
+        </div>
     </section>
-  );
+);
 }
