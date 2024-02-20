@@ -11,14 +11,14 @@ function Header() {
       <div className="relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
           <div className="flex-1 md:flex md:items-center md:gap-12">
-            <a className="block text-teal-600" href="/">
+            <Link className="block text-teal-600" to="/">
               <span className="sr-only">Home</span>
               <img
                 src={logo}
                 alt="Logo"
                 className="h-10 w-auto rounded-full lg:h-14"
               />
-            </a>
+            </Link>
           </div>
 
           <div className="font-inter md:flex md:items-center md:gap-12">
@@ -34,7 +34,7 @@ function Header() {
                 </li>
 
                 <li>
-                  <Link to="carrer"
+                  <Link to="/carrer"
                     className="text-zinc-800 transition hover:text-zinc-800/75"
                   >
                     {" "}
@@ -43,23 +43,23 @@ function Header() {
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-zinc-800 transition hover:text-zinc-800/75"
-                    href="#"
+                    to="/resources"
                   >
                     {" "}
                     Resources{" "}
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     className="text-zinc-800 transition hover:text-zinc-800/75"
-                    href="#"
+                    to="/events"
                   >
                     {" "}
                     Events{" "}
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </nav>
