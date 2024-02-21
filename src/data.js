@@ -13,7 +13,7 @@ export const people = [
         name:"Satwik Gupta",
         imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471916/members/Satwik_Gupta_gop6uv.jpg",
         imageAlt:"satwik",
-        role:"Vice President",
+        role:"General Secretary",
         // linkedinUrl:,
         // twitterUrl:
     },
@@ -22,7 +22,7 @@ export const people = [
         name:"Dhruv Rohatgi",
         imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/v1708471910/members/Dhruv_Rohatgi_DR_wqxug0.jpg",
         imageAlt:"dhruv",
-        role:"Head of Orders",
+        role:"Head of Operations",
         // linkedinUrl:,
         // twitterUrl:
     },
@@ -31,7 +31,7 @@ export const people = [
         name:"Lalit Kumar Jangir",
         imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/v1708473082/members/pic_u5baug.jpg",
         imageAlt:"chhotu",
-        role:"Nulla",
+        role:"Technical Lead",
         // linkedinUrl:,
         // twitterUrl:
     },
