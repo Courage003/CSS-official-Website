@@ -3,7 +3,7 @@ import logo from "../../assets/logo.jpg";
 const Footer = () => {
   return (
     <footer className="bg-black py-12 text-white">
-      <div className="container mx-auto flex flex-wrap justify-between px-4">
+      <div className="container mx-auto flex flex-wrap justify-between px-4 sm:flex-row">
         {/* Column 1 */}
         <div className="mb-8 w-full md:w-1/3 md:text-center">
           <div className="mb-4 flex flex-col items-center justify-center">
@@ -13,69 +13,64 @@ const Footer = () => {
               className="mb-4 w-32 cursor-pointer rounded-full"
             />
             <h2 className="ml-2 text-xl font-bold">
-              CIVIL SERVICE SOCIETY
+              Civil Services Society
               <br />
               <span className="text-sm">NIT AGARTALA</span>
             </h2>
           </div>
           {/* <hr className="w-12 h-1 font-bold"></hr> */}
           <br />
-          <div className=" flex flex-col items-center">
-            <p>
-              <strong>EMPOWER</strong>
-            </p>
-            <p>
-              <strong>INSPIRE</strong>
-            </p>
-            <p>
-              <strong>TRANSFORM</strong>
-            </p>
+          <div className=" flex flex-col items-center font-inter text-sm">
+            <p>EMPOWER</p>
+            <p>INSPIRE</p>
+            <p>TRANSFORM</p>
           </div>
         </div>
         {/* Column 2 */}
         <div className="mb-4 w-full md:w-1/3 md:text-center">
-          <div className="mt-40">
-            <h4 className="mb-1 text-xl font-bold">Follow Us</h4>
+          <div className="mt-10 flex flex-col items-center justify-between sm:mt-20">
+            <h4 className="mb-1 text-2xl font-bold">Follow Us</h4>
             {/* <hr className="w-12 font-bold" /> */}
-            {/* <br /> */}
-            <div className="flex flex-col justify-between items-center">
-              <div className="flex flex-col justify-between items-start  gap-2 pt-4">
-                <a href="" className="text-lg">
-                  <i
-                    className="fa fa-facebook-square pr-2 text-xl"
-                    aria-hidden="true"
-                  ></i>
-                  Facebook
-                </a>
-                <a href="" className="text-lg">
-                  <i className="fa-brands fa-x-twitter pr-2 text-xl"></i>
-                  Twitter
-                </a>
-                <a href="" className="text-lg">
-                  <i className="fa-brands fa-instagram pr-2 text-xl"></i>
-                  Instagram
-                </a>
-              </div>
+
+            <div className="flex flex-col items-start justify-between  gap-2 pt-4">
+              <a href="" className="text-lg">
+                <i
+                  className="fa fa-facebook-square pr-2 text-xl"
+                  aria-hidden="true"
+                ></i>
+                Facebook
+              </a>
+              <a href="" className="text-lg">
+                <i className="fa-brands fa-x-twitter pr-2 text-xl"></i>
+                Twitter
+              </a>
+              <a href="" className="text-lg">
+                <i className="fa-brands fa-instagram pr-2 text-xl"></i>
+                Instagram
+              </a>
             </div>
           </div>
         </div>
         {/* Column 3 */}
-        <div className="mb-8 w-full md:w-1/3 md:text-center">
-          <h4 className="mb-3 text-lg font-bold">Get Notified</h4>
+        <div className="mb-8 mt-20 w-full text-center md:w-1/3">
+          <h4 className=" text-lg font-bold">Get Notified</h4>
           {/* <hr className="w-12 font-bold" /> */}
-          <br />
-          <p className="mt-4">
+          {/* <br /> */}
+          <p className="mt-4 mx-6">
             Be the first to know about the activities of Public Policy and
             Governance
           </p>
-          <div className="pt-10">
-            <form action="">
+          <div className="pt-6">
+            <form
+              action=""
+              className="flex flex-row items-center justify-center"
+            >
               <input
                 type="email"
-                className="mb-4 h-10 w-full p-2 text-black outline-none md:w-56"
+                className="h-10 w-56 rounded-l-md border border-gray-300 px-4 focus:border-blue-300 focus:outline-none focus:ring"
                 placeholder="Type Email"
               />
-              <button className="h-11 w-12 bg-orange-500 leading-6 text-black">
+              <button className="flex h-10 w-12 items-center justify-center rounded-r-md bg-orange-500 text-white">
                 <i className="fas fa-envelope"></i>
               </button>
             </form>
