@@ -1,7 +1,7 @@
 export const people = [
     {
         id:1,
-        name:"Lalit Kumar Jangir",
+        name:"Lalit Jangir",
         imageUrl:"src/assets/pic.jpg",
         imageAlt:"photo",
         role:"Technical Lead",
@@ -17,24 +17,60 @@ export const people = [
     //     linkedinUrl:,
     //     twitterUrl:
     },
-    // {
-    //     id:1,
-    //     Name:,
-    //     imageUrl:,
-    //     imageAlt:,
-    //     Role:,
+    {
+        id:3,
+        name:"Satwik Gupta",
+        imageUrl:"src/assets/logo.jpg",
+        imageAlt:"photo",
+        role:"Technical Head",
+        // linkedinUrl:,
+        // twitterUrl:
+    },
+    {
+        id:3,
+        name:"Satwik Gupta",
+        imageUrl:"src/assets/logo.jpg",
+        imageAlt:"photo",
+        role:"Technical Head",
     //     linkedinUrl:,
     //     twitterUrl:
-    // },
-    // {
-    //     id:1,
-    //     Name:,
-    //     imageUrl:,
-    //     imageAlt:,
-    //     Role:,
+    },
+    {
+        id:3,
+        name:"Satwik Gupta",
+        imageUrl:"src/assets/logo.jpg",
+        imageAlt:"photo",
+        role:"Technical Head",
     //     linkedinUrl:,
     //     twitterUrl:
-    // },
+    },
+    {
+        id:3,
+        name:"Satwik Gupta",
+        imageUrl:"src/assets/logo.jpg",
+        imageAlt:"photo",
+        role:"Technical Head",
+    //     linkedinUrl:,
+    //     twitterUrl:
+    },
+    {
+        id:3,
+        name:"Satwik Gupta",
+        imageUrl:"src/assets/logo.jpg",
+        imageAlt:"photo",
+        role:"Technical Head",
+    //     linkedinUrl:,
+    //     twitterUrl:
+    },
+    {
+        id:3,
+        name:"Satwik Gupta",
+        imageUrl:"src/assets/logo.jpg",
+        imageAlt:"photo",
+        role:"Technical Head",
+    //     linkedinUrl:,
+    //     twitterUrl:
+    },
     // {
     //     id:1,
     //     Name:,
