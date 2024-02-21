@@ -12,11 +12,9 @@ const Footer = () => {
               alt="Logo"
               className="mb-4 w-32 cursor-pointer rounded-full"
             />
-            <h2 className="ml-2 text-xl font-bold">
-              Civil Services Society
-              <br />
-              <span className="text-sm">NIT AGARTALA</span>
-            </h2>
+            <h2 className="mb-1 text-xl font-bold">Civil Services Society</h2>
+
+            <span className="text-sm font-semibold">NIT AGARTALA</span>
           </div>
           {/* <hr className="w-12 h-1 font-bold"></hr> */}
           <br />
@@ -52,11 +50,11 @@ const Footer = () => {
           </div>
         </div>
         {/* Column 3 */}
-        <div className="mb-8 mt-20 w-full text-center md:w-1/3">
-          <h4 className=" text-lg font-bold">Get Notified</h4>
+        <div className="mb-8 mt-10 w-full text-center sm:mt-20 md:w-1/3">
+          <h4 className="mb-1 text-2xl font-bold">Get Notified</h4>
           {/* <hr className="w-12 font-bold" /> */}
-          {/* <br /> */}
-          <p className="mt-4 mx-6">
+
+          <p className="mx-6 mt-4 text-lg">
             Be the first to know about the activities of Public Policy and
             Governance
           </p>
