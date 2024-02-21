@@ -1,4 +1,5 @@
 import logo from "../../assets/logo.jpg";
+import React from 'react';
 
 const Footer = () => {
   return (
@@ -33,10 +34,10 @@ const Footer = () => {
             <div className="flex flex-col items-start justify-between  gap-2 pt-4">
               <a href="" className="text-lg">
                 <i
-                  className="fa fa-facebook-square pr-2 text-xl"
+                  className="fa fa-linkedin pr-2 text-xl"
                   aria-hidden="true"
                 ></i>
-                Facebook
+                LinkedIn
               </a>
               <a href="" className="text-lg">
                 <i className="fa-brands fa-x-twitter pr-2 text-xl"></i>
