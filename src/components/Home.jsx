@@ -16,10 +16,10 @@ function Home() {
           className="absolute min-h-full  
             w-auto min-w-full max-w-none"
         ></video>
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-black via-transparent to-transparent opacity-70"></div>
-      <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-tl from-black via-transparent to-transparent opacity-70"></div>
-      <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-br from-black via-transparent to-transparent opacity-70"></div>
-      <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-bl from-black via-transparent to-transparent opacity-70"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-black via-transparent to-transparent opacity-80"></div>
+      <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-tl from-black via-transparent to-transparent opacity-80"></div>
+      <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-br from-black via-transparent to-transparent opacity-80"></div>
+      <div className="absolute bottom-0 right-0 w-full h-full bg-gradient-to-bl from-black via-transparent to-transparent opacity-80"></div>
       
         <div className="hero-overlay z-20 m-4 bg-opacity-60 text-center tracking-wide font-medium text-2xl ">
           A NITA Club
