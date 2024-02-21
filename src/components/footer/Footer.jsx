@@ -1,6 +1,11 @@
 import logo from "../../assets/logo.jpg";
 import React from 'react';
 
+const instagram = "https://instagram.com/civil_services.nita";
+const twitter = "";
+const linkedin = "https://www.linkedin.com/in/civil-services-society-nit-a-25a19b2a3";
+
+
 const Footer = () => {
   return (
     <footer className="bg-black py-12 text-white">
@@ -32,18 +37,18 @@ const Footer = () => {
             {/* <hr className="w-12 font-bold" /> */}
 
             <div className="flex flex-col items-start justify-between  gap-2 pt-4">
-              <a href="" className="text-lg">
+              <a href={linkedin} className="text-lg" target="_blank">
                 <i
                   className="fa fa-linkedin pr-2 text-xl"
                   aria-hidden="true"
                 ></i>
                 LinkedIn
               </a>
-              <a href="" className="text-lg">
+              <a href={twitter} className="text-lg" target="_blank">
                 <i className="fa-brands fa-x-twitter pr-2 text-xl"></i>
                 Twitter
               </a>
-              <a href="" className="text-lg">
+              <a href={instagram} className="text-lg" target="_blank">
                 <i className="fa-brands fa-instagram pr-2 text-xl"></i>
                 Instagram
               </a>
