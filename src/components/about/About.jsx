@@ -43,17 +43,10 @@ export default function About() {
         </div>
       </div>
 
-<<<<<<< HEAD
         <div className="flex flex-col items-center justify-center">
         <h1 className="text-5xl font-semibold underline mb-5">Our Teams</h1>
         <Card/>
         </div>
-=======
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="text-5xl font-semibold underline">Our Teams</h1>
-        <Card />
-      </div>
->>>>>>> 9aa0a7f02a59dd49fd4822116ba3d7e53f3e5eba
     </section>
   );
 }
