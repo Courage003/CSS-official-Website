@@ -4,10 +4,10 @@ import { people } from "../../data";
 export default function Card() {
   return (
     <div className="w-full bg-white py-24 sm:py-32">
-      <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+      <div className="mx-auto max-w-7xl 0 px-6 lg:px-8 ">
         <ul
           role="list"
-          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-3 xl:col-span-2"
+          className="grid items-center justify-center grid-cols-2 gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-3"
         >
           {people.map((person) => (
             <li key={person.id} className="mb-4">
