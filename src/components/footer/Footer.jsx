@@ -3,7 +3,7 @@ import logo from "../../assets/logo.jpg";
 const Footer = () => {
   return (
     <footer className="bg-black py-12 text-white">
-      <div className="container mx-auto flex flex-wrap justify-between px-4 sm:flex-row">
+      <div className="container mx-auto flex flex-wrap justify-around px-4 sm:flex-row">
         {/* Column 1 */}
         <div className="mb-8 w-full md:w-1/3 md:text-center">
           <div className="mb-4 flex flex-col items-center justify-center">
@@ -50,11 +50,11 @@ const Footer = () => {
           </div>
         </div>
         {/* Column 3 */}
-        <div className="mb-8 mt-10 w-full text-center sm:mt-20 md:w-1/3">
+        <div className="mb-8 mt-10 w-full flex flex-col items-center text-center sm:mt-20 md:w-1/3">
           <h4 className="mb-1 text-2xl font-bold">Get Notified</h4>
           {/* <hr className="w-12 font-bold" /> */}
 
-          <p className="mx-6 mt-4 text-lg">
+          <p className="mx-6 mt-4 text-lg max-w-60">
             Be the first to know about the activities of Public Policy and
             Governance
           </p>
