@@ -7,7 +7,6 @@ import App from "./App.jsx";
 import { Loading } from "./components/index.js";
 import "./index.css";
 const LazyAbout = lazy(() => import("./components/about/About.jsx"))
-
 const LazyHome = lazy(() => import("./components/Home.jsx"))
 
 const router = createBrowserRouter([

@@ -16,7 +16,8 @@ export default function Card() {
                   <img
                     className="h-48 w-44 sm:h-64 sm:w-60 transform overflow-hidden rounded-xl border border-gray-400 object-cover object-top transition duration-300 ease-in-out hover:scale-105"
                     src={person.imageUrl}
-                    alt=""
+                    alt={person.name}
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 flex items-center justify-center rounded-xl bg-black bg-opacity-50 opacity-0 transition duration-500 ease-in-out group-hover:opacity-100">
                     <div className="flex items-center space-x-4">
