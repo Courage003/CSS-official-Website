@@ -1,5 +1,6 @@
 import React from 'react'
-import logo from "./../assets/logo.jpg"
+// import logo from "./../assets/logo.jpg"
+const logo = "https://res.cloudinary.com/dm1tnakkg/image/upload/v1708713680/assets/logo_dqafgx.jpg"
 
 function Loading() {
   return (
