@@ -14,7 +14,7 @@ export default function Card() {
               <div className="flex flex-col items-center overflow-hidden rounded-lg transition delay-100 ease-in-out">
                 <div className="group relative">
                   <img
-                    className="h-48 w-44 sm:h-64 sm:w-60 transform overflow-hidden rounded-xl border border-gray-400 object-cover object-top transition duration-300 ease-in-out hover:scale-105"
+                    className="h-48 w-44 transform overflow-hidden rounded-xl border border-gray-400 object-cover object-top transition duration-300 ease-in-out hover:scale-105 sm:h-64 sm:w-60"
                     src={person.imageUrl}
                     alt={person.name}
                     loading="lazy"
@@ -28,7 +28,7 @@ export default function Card() {
                         className="text-white hover:text-blue-500"
                       >
                         <i
-                          className="fa fa-linkedin pr-2 text-xl cursor-pointer"
+                          className="fa fa-linkedin cursor-pointer pr-2 text-xl"
                           aria-hidden="true"
                         ></i>
                       </a>
@@ -38,7 +38,7 @@ export default function Card() {
                         rel="noopener noreferrer"
                         className="text-white hover:text-slate-400"
                       >
-                        <i className="fa-brands fa-x-twitter pr-2 text-xl cursor-pointer"></i>
+                        <i className="fa-brands fa-x-twitter cursor-pointer pr-2 text-xl"></i>
                       </a>
                     </div>
                   </div>

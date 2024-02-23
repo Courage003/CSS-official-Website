@@ -6,8 +6,8 @@ import App from "./App.jsx";
 
 import { Loading } from "./components/index.js";
 import "./index.css";
-const LazyAbout = lazy(() => import("./components/about/About.jsx"))
-const LazyHome = lazy(() => import("./components/Home.jsx"))
+const LazyAbout = lazy(() => import("./components/about/About.jsx"));
+const LazyHome = lazy(() => import("./components/Home.jsx"));
 
 const router = createBrowserRouter([
   {
@@ -16,30 +16,37 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Suspense fallback={<Loading />}>
-        <LazyHome />
-      </Suspense>,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <LazyHome />
+          </Suspense>
+        ),
       },
       {
         path: "/about",
-        element: <Suspense fallback={<Loading />}>
-          <LazyAbout />
-        </Suspense>,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <LazyAbout />
+          </Suspense>
+        ),
       },
       {
         path: "/career",
-        element: <div>Not FOund: Career page
-          <Loading/>
+        element: (
+          <div>
+            Not FOund: Career page
+            <Loading />
           </div>
+        ),
       },
       {
         path: "/resources",
-        element: <div>Resources Page</div>
+        element: <div>Resources Page <Loading /></div>,
       },
       {
         path: "/events",
-        element: <div>Not Found : Events page</div>
-      }
+        element: <div>Not Found : Events page<Loading /></div>,
+      },
     ],
   },
 ]);
@@ -47,5 +54,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
