@@ -33,7 +33,7 @@ function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 md:bg-gray-500 md:bg-opacity-10 md:backdrop-blur-sm ">
+    <header className="fixed w-full top-0 z-50  md:bg-opacity-0 md:backdrop-blur-sm hover:bg-opacity-60 transition duration-500 hover:bg-white  ">
       <div className="relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
           <div className="flex-1 md:flex md:items-center md:gap-12">
@@ -53,7 +53,7 @@ function Header() {
                 <li>
                   <Link
                     to="/about"
-                    className="text-zinc-800 transition hover:text-zinc-800/75 hover:drop-shadow-[1px_0px_0px_#ffffff]"
+                    className="text-zinc-800 transition hover:font-semibold"
                   >
                     {" "}
                     About Us{" "}
@@ -63,7 +63,7 @@ function Header() {
                 <li>
                   <Link
                     to="/career"
-                    className="text-zinc-800 transition hover:text-zinc-800/75 hover:drop-shadow-[1px_0px_0px_#ffffff]"
+                    className="text-zinc-800 transition hover:font-semibold"
                   >
                     {" "}
                     Career and Exams{" "}
@@ -72,7 +72,7 @@ function Header() {
 
                 <li>
                   <Link
-                    className="text-zinc-800 transition hover:text-zinc-800/75 hover:drop-shadow-[1px_0px_0px_#ffffff]"
+                    className="text-zinc-800 transition hover:font-semibold"
                     to="/resources"
                   >
                     {" "}
@@ -82,7 +82,7 @@ function Header() {
 
                 <li>
                   <Link
-                    className="text-zinc-800 transition hover:text-zinc-800/75 hover:drop-shadow-[1px_0px_0px_#ffffff]"
+                    className="text-zinc-800 transition hover:font-semibold"
                     to="/events"
                   >
                     {" "}
