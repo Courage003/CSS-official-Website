@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import backVideo from "../assets/home_page__video.mp4"
+import Loading from "./Loading";
+
+
 
 function Home() {
-  return (
+  const [load, setLoad] = useState(true);
+  setTimeout(() => {
+    setLoad(false)
+  }, 1000)
+  return load ?
+    <Loading />:
     <div className="hero min-h-screen">
       <div
         className="relative flex h-screen  
@@ -34,7 +42,7 @@ function Home() {
         </div>
       </div>
     </div>
-  );
+  ;
 }
 
 export default Home;
