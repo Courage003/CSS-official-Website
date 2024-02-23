@@ -3,7 +3,7 @@ import { people } from "../../data";
 
 export default function Card() {
   return (
-    <div className="w-full bg-white py-24 sm:py-32">
+    <div className="w-full bg-white pb-24 pt-16 sm:pb-32">
       <div className="0 mx-auto max-w-7xl px-6 lg:px-8 ">
         <ul
           role="list"
@@ -14,7 +14,7 @@ export default function Card() {
               <div className="flex flex-col items-center overflow-hidden rounded-lg transition delay-100 ease-in-out">
                 <div className="group relative">
                   <img
-                    className="h-64 w-60 transform overflow-hidden rounded-xl border border-gray-400 object-cover object-top transition duration-300 ease-in-out hover:scale-105"
+                    className="h-48 w-44 sm:h-64 sm:w-60 transform overflow-hidden rounded-xl border border-gray-400 object-cover object-top transition duration-300 ease-in-out hover:scale-105"
                     src={person.imageUrl}
                     alt=""
                   />

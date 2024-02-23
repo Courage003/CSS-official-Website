@@ -5,8 +5,8 @@ export const people = [
         imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471914/members/Rakesh_Ranjan_uamlvt.jpg",
         imageAlt:"rakesh",
         role:"President",
-    //     linkedinUrl:,
-    //     twitterUrl:
+        linkedinUrl:"",
+        twitterUrl:""
     },
     {
         id:2,
@@ -35,33 +35,33 @@ export const people = [
         // linkedinUrl:,
         // twitterUrl:
     },
-    // {
-    //     id:4,
-    //     name:"Sujal Patel",
-    //     imageUrl: "https://res.cloudinary.com/dm1tnakkg/image/upload/c_crop,ar_1:1/v1708471919/members/Sujal_Patel_c3fenl.jpg",
-    //     imageAlt: "sujal",
-    //     role: "Member",
-    //     //     linkedinUrl:,
-    //     //     twitterUrl:
-    // },
-    // {
-    //     id:5,
-    //     name:"Divyam Singh",
-    //     imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471913/members/Divyam_Raj_Singh_rzoy5t.jpg",
-    //     imageAlt:"divyam",
-    //     role:"Member",
-    //     // linkedinUrl:,
-    //     // twitterUrl:
-    // },
-    // {
-    //     id:6,
-    //     name:"Amitabh Anand",
-    //     imageUrl: "https://res.cloudinary.com/dm1tnakkg/image/upload/v1708471907/members/A__Anand_ivau8f.jpg",
-    //     imageAlt: "amitabh",
-    //     role: "",
-    // //     linkedinUrl:,
-    // //     twitterUrl:
-    // },
+    {
+        id:104,
+        name:"Sujal Patel",
+        imageUrl: "https://res.cloudinary.com/dm1tnakkg/image/upload/c_crop,ar_1:1/v1708471919/members/Sujal_Patel_c3fenl.jpg",
+        imageAlt: "sujal",
+        role: "Member",
+        //     linkedinUrl:,
+        //     twitterUrl:
+    },
+    {
+        id:125,
+        name:"Divyam Singh",
+        imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471913/members/Divyam_Raj_Singh_rzoy5t.jpg",
+        imageAlt:"divyam",
+        role:"Member",
+        // linkedinUrl:,
+        // twitterUrl:
+    },
+    {
+        id:1316,
+        name:"Amitabh Anand",
+        imageUrl: "https://res.cloudinary.com/dm1tnakkg/image/upload/v1708471907/members/A__Anand_ivau8f.jpg",
+        imageAlt: "amitabh",
+        role: "",
+    //     linkedinUrl:,
+    //     twitterUrl:
+    },
     // {
     //     id:1,
     //     Name:,
