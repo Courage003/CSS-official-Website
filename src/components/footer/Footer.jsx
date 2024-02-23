@@ -37,18 +37,18 @@ const Footer = () => {
             {/* <hr className="w-12 font-bold" /> */}
 
             <div className="flex flex-col items-start justify-between  gap-2 pt-4">
-              <a href={linkedin} className="text-lg" target="_blank">
+              <a href={linkedin} className="text-lg hover:text-sky-700" target="_blank">
                 <i
                   className="fa fa-linkedin pr-2 text-xl"
                   aria-hidden="true"
                 ></i>
                 LinkedIn
               </a>
-              <a href={twitter} className="text-lg" target="_blank">
+              <a href={twitter} className="text-lg hover:text-slate-500" target="_blank">
                 <i className="fa-brands fa-x-twitter pr-2 text-xl"></i>
                 Twitter
               </a>
-              <a href={instagram} className="text-lg" target="_blank">
+              <a href={instagram} className="text-lg hover:text-pink-600" target="_blank">
                 <i className="fa-brands fa-instagram pr-2 text-xl"></i>
                 Instagram
               </a>

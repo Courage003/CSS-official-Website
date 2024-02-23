@@ -53,7 +53,7 @@ function Header() {
                 <li>
                   <Link
                     to="/about"
-                    className="text-zinc-800 transition hover:font-semibold"
+                    className="text-zinc-800 transition hover:text-amber-700"
                   >
                     {" "}
                     About Us{" "}
@@ -63,7 +63,7 @@ function Header() {
                 <li>
                   <Link
                     to="/career"
-                    className="text-zinc-800 transition hover:font-semibold"
+                    className="text-zinc-800 transition hover:text-amber-700"
                   >
                     {" "}
                     Career and Exams{" "}
@@ -72,7 +72,7 @@ function Header() {
 
                 <li>
                   <Link
-                    className="text-zinc-800 transition hover:font-semibold"
+                    className="text-zinc-800 transition hover:text-amber-700"
                     to="/resources"
                   >
                     {" "}
@@ -82,7 +82,7 @@ function Header() {
 
                 <li>
                   <Link
-                    className="text-zinc-800 transition hover:font-semibold"
+                    className="text-zinc-800 transition hover:text-amber-700"
                     to="/events"
                   >
                     {" "}
