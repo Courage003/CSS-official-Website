@@ -1,0 +1,15 @@
+# netlify.toml
+
+[build]
+  command = "npm run build"  # Adjust this based on your build command
+  publish = "dist"          # Adjust this based on your build output directory
+
+[context.production]
+  command = "npm run build"  # Adjust this based on your production build command
+  publish = "dist"           # Adjust this based on your production build output directory
+
+[context.deploy-preview]
+  command = "npm run build"  # Adjust this based on your preview build command
+  publish = "dist"           # Adjust this based on your preview build output directory
+
+# Add any other global settings you need here
