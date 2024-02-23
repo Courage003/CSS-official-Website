@@ -6,16 +6,16 @@ export default function About() {
   return (
     <section className=" hero mx-auto ">
       <div
-        className="mb-12 w-full p-20 text-center text-white"
+        className="mb-12 w-full p-24 text-center text-white"
         style={{ background: "#000" }}
       >
-        <h4 className="text-4xl font-bold">#KnowUs</h4>
+        <h4 className="text-5xl font-bold">#KnowUs</h4>
         <p>EMPOWER. INSPIRE. TRANSFORM.</p>
       </div>
       <div className="">
         <div className="mb-20 flex flex-col items-center justify-center lg:flex-row">
           <div className="m-10 rounded-lg lg:ml-8 lg:mr-4 lg:w-1/2">
-            <img src={grp} alt="grpPhoto" style={{ borderRadius: "12px" }} />
+            <img src={grp} loading="lazy" alt="grpPhoto" style={{ borderRadius: "12px" }} />
           </div>
           <div className="ml-1 flex flex-col items-center justify-center lg:w-1/2">
             <h4 className="text-center text-4xl font-bold">Who We Are ?</h4>

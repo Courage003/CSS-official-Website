@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
 import backVideo from "../assets/home_page__video.mp4";
 import Carousel from "./UI/Carousel";
@@ -32,6 +33,20 @@ function Home() {
   }, []);
 
   return (
+=======
+import React, { useState, useEffect } from "react";
+import backVideo from "../assets/home_page__video.mp4";
+import Loading from "./Loading";
+
+function Home() {
+  const [load, setLoad] = useState(true);
+  setTimeout(() => {
+    setLoad(false);
+  }, 1000);
+  return load ? (
+    <Loading />
+  ) : (
+>>>>>>> 541139af80fb1d9838bf0c51889ffa5739af4db3
     <div className="hero min-h-screen">
       <div
         className="relative flex h-screen  

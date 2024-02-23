@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Sidemenu from "./Sidemenu";
 import logo from "../../assets/logo.jpg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -47,47 +47,56 @@ function Header() {
             </Link>
           </div>
 
-          <div className="font-inter md:flex md:items-center md:gap-12">
+         <div className="font-inter md:flex md:items-center md:gap-12">
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm lg:text-lg">
                 <li>
-                  <Link
+                  <NavLink
+                    to="/"
+                    className={({isActive}) => `transition hover:text-amber-700 ${isActive ? "text-amber-900" : "text-zinc-800"}`}
+                  >
+                    {" "}
+                    Home{" "}
+                  </NavLink>
+                </li>
+              <li>
+                  <NavLink
                     to="/about"
-                    className="text-zinc-800 transition hover:text-amber-700"
+                    className={({isActive}) => ` transition hover:text-amber-700 ${isActive ? "text-amber-900" : "text-zinc-800"}`}
                   >
                     {" "}
                     About Us{" "}
-                  </Link>
+                  </NavLink>
                 </li>
 
-                <li>
-                  <Link
+               <li>
+                  <NavLink
                     to="/career"
-                    className="text-zinc-800 transition hover:text-amber-700"
+                    className={({isActive}) => ` transition hover:text-amber-700 ${isActive ? "text-amber-900" : "text-zinc-800"}`}
                   >
                     {" "}
                     Career and Exams{" "}
-                  </Link>
+                  </NavLink>
                 </li>
 
-                <li>
-                  <Link
-                    className="text-zinc-800 transition hover:text-amber-700"
+               <li>
+                  <NavLink
                     to="/resources"
+                    className={({isActive}) => ` transition hover:text-amber-700 ${isActive ? "text-amber-900" : "text-zinc-800"}`}
                   >
                     {" "}
                     Resources{" "}
-                  </Link>
+                  </NavLink>
                 </li>
 
-                <li>
-                  <Link
-                    className="text-zinc-800 transition hover:text-amber-700"
+               <li>
+                  <NavLink
+                    className={({isActive}) => ` transition hover:text-amber-700 ${isActive ? "text-amber-900" : "text-zinc-800"}`}
                     to="/events"
                   >
                     {" "}
                     Events{" "}
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </nav>
