@@ -1,10 +1,14 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.jsx";
-import { About, Home } from "./components/index.js";
+
+import { Loading } from "./components/index.js";
 import "./index.css";
+const LazyAbout = lazy(() => import("./components/about/About.jsx"))
+
+const LazyHome = lazy(() => import("./components/Home.jsx"))
 
 const router = createBrowserRouter([
   {
@@ -13,15 +17,21 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: <Suspense fallback={<Loading />}>
+        <LazyHome />
+      </Suspense>,
       },
       {
         path: "/about",
-        element: <About/>,
+        element: <Suspense fallback={<Loading />}>
+          <LazyAbout />
+        </Suspense>,
       },
       {
         path: "/career",
-        element: <div>Not FOund: Career page</div>
+        element: <div>Not FOund: Career page
+          <Loading/>
+          </div>
       },
       {
         path: "/resources",
