@@ -1,24 +1,24 @@
 export const people = [
     {
-        id:1,
+        id:100,
         name:"Rakesh Ranjan",
         imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471914/members/Rakesh_Ranjan_uamlvt.jpg",
         imageAlt:"rakesh",
         role:"President",
-        linkedinUrl:"",
+        linkedinUrl:"https://www.linkedin.com/in/rakesh-ranjan-7b1902228",
         twitterUrl:""
     },
     {
-        id:2,
+        id:200,
         name:"Satwik Gupta",
         imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471916/members/Satwik_Gupta_gop6uv.jpg",
         imageAlt:"satwik",
         role:"General Secretary",
-        // linkedinUrl:,
-        // twitterUrl:
+        linkedinUrl: "https://www.linkedin.com/in/satwikgupta18",
+        twitterUrl: "https://twitter.com/SatwikGupta1801"
     },
     {
-        id:3,
+        id:300,
         name:"Dhruv Rohatgi",
         imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/v1708471910/members/Dhruv_Rohatgi_DR_wqxug0.jpg",
         imageAlt:"dhruv",
@@ -27,7 +27,7 @@ export const people = [
         // twitterUrl:
     },
     {
-        id:23,
+        id:203,
         name:"Lalit Kumar Jangir",
         imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/v1708473082/members/pic_u5baug.jpg",
         imageAlt:"chhotu",
@@ -54,7 +54,7 @@ export const people = [
         // twitterUrl:
     },
     {
-        id:1316,
+        id:136,
         name:"Amitabh Anand",
         imageUrl: "https://res.cloudinary.com/dm1tnakkg/image/upload/v1708471907/members/A__Anand_ivau8f.jpg",
         imageAlt: "amitabh",
@@ -64,19 +64,19 @@ export const people = [
     },
     // {
     //     id:1,
-    //     Name:,
+    //     name:,
     //     imageUrl:,
     //     imageAlt:,
-    //     Role:,
+    //     role:,
     //     linkedinUrl:,
     //     twitterUrl:
     // },
     // {
     //     id:1,
-    //     Name:,
+    //     name:,
     //     imageUrl:,
     //     imageAlt:,
-    //     Role:,
+    //     role:,
     //     linkedinUrl:,
     //     twitterUrl:
     // },
