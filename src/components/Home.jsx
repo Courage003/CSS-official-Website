@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
 import backVideo from "../assets/home_page__video.mp4";
 import Carousel from "./UI/Carousel";
-import Slider from "infinite-react-carousel";
-
+import Loading from "./Loading";
 
 function Home() {
   const [data, setData] = useState([]);
@@ -32,21 +30,14 @@ function Home() {
     fetchData();
   }, []);
 
-  return (
-=======
-import React, { useState, useEffect } from "react";
-import backVideo from "../assets/home_page__video.mp4";
-import Loading from "./Loading";
-
-function Home() {
   const [load, setLoad] = useState(true);
   setTimeout(() => {
     setLoad(false);
   }, 1000);
-  return load ? (
+
+  return (load ? (
     <Loading />
   ) : (
->>>>>>> 541139af80fb1d9838bf0c51889ffa5739af4db3
     <div className="hero min-h-screen">
       <div
         className="relative flex h-screen  
@@ -79,13 +70,14 @@ function Home() {
         </div>
       </div>
 
-      <section className="hero flex h-[550px] items-center justify-center bg-white h-screen">
+      <section className="hero flex h-[550px] items-center justify-center bg-white">
         <div className="container text-xl text-orange-700 ">
           <Carousel data={data} />
         </div>
       </section>
     </div>
-  );
+  ));
 }
+
 
 export default Home;
