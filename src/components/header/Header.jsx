@@ -33,7 +33,7 @@ function Header() {
   };
 
   return (
-    <header className="fixed w-full top-0 z-50  md:bg-opacity-0 md:backdrop-blur-sm hover:bg-opacity-60 transition duration-500 hover:bg-white  ">
+    <header className="fixed w-full top-0 z-50  md:bg-opacity-0 md:backdrop-blur-sm hover:bg-opacity-60 transition duration-500 md:hover:bg-white  ">
       <div className="relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
           <div className="flex-1 md:flex md:items-center md:gap-12">
@@ -148,6 +148,7 @@ function Header() {
               ref={sidemenuRef}
               onMouseEnter={handleSidemenuMouseEnter}
               onMouseLeave={handleSidemenuMouseLeave}
+              onClick={handleSidemenuMouseLeave}
               className={`dark:bg-dark-2 absolute right-4 top-full w-full max-w-[250px] rounded-lg border bg-white px-6 py-3 shadow lg:w-full lg:max-w-full lg:shadow-none lg:dark:bg-transparent ${!open && "hidden"} `}
             >
               <Sidemenu />
