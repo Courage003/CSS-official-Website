@@ -72,7 +72,7 @@ function Home() {
 
       <section className="hero flex h-[550px] items-center justify-center bg-white">
         <div className="container text-xl text-orange-700 ">
-          <Carousel data={data} />
+          <Carousel value={data} />
         </div>
       </section>
     </div>
