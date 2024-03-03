@@ -57,7 +57,7 @@ export default function About() {
       </div>
 
       <div className="flex flex-col items-center justify-center">
-        <h1 className="mb-5 font-inter text-5xl font-semibold underline">
+        <h1 className="font-inter text-3xl sm:text-5xl font-semibold underline">
           Our Teams
         </h1>
         <Card />
