@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-wrap justify-around px-4">
         {/* Column 1 */}
         <div className="mb-4 w-full md:w-1/3 md:text-center">
-          <div className="mb-4 flex flex-col items-center justify-center">
+          <div className="sm:mb-4 flex flex-col items-center justify-center">
             <img
               src={logo}
               alt="Logo"
@@ -32,24 +32,24 @@ const Footer = () => {
         </div>
         {/* Column 2 */}
         <div className="mb-4 w-1/2 md:w-1/3 md:text-center">
-          <div className="mt-10 flex flex-col items-center justify-between sm:mt-20">
-            <h4 className="mb-1 text-2xl font-bold">Follow Us</h4>
+          <div className="mt-5 flex flex-col items-center justify-between sm:mt-20">
+            <h4 className="mb-1 text-lg sm:text-2xl font-bold">Follow Us</h4>
             {/* <hr className="w-12 font-bold" /> */}
 
-            <div className="flex flex-col items-start justify-between  gap-2 pt-4">
-              <a href={linkedin} className="text-lg hover:text-sky-700" target="_blank">
+            <div className="flex flex-col text-sm sm:text-lg items-start justify-between  gap-2 pt-4">
+              <a href={linkedin} className=" hover:text-sky-700" target="_blank">
                 <i
-                  className="fa fa-linkedin pr-2 text-xl"
+                  className="fa fa-linkedin pr-2"
                   aria-hidden="true"
                 ></i>
                 LinkedIn
               </a>
-              <a href={twitter} className="text-lg hover:text-slate-500" target="_blank">
-                <i className="fa-brands fa-x-twitter pr-2 text-xl"></i>
+              <a href={twitter} className=" hover:text-slate-500" target="_blank">
+                <i className="fa-brands fa-x-twitter pr-2"></i>
                 Twitter
               </a>
-              <a href={instagram} className="text-lg hover:text-pink-600" target="_blank">
-                <i className="fa-brands fa-instagram pr-2 text-xl"></i>
+              <a href={instagram} className=" hover:text-pink-600" target="_blank">
+                <i className="fa-brands fa-instagram pr-2 "></i>
                 Instagram
               </a>
             </div>
@@ -57,10 +57,10 @@ const Footer = () => {
         </div>
         {/* Column 3 */}
         <div className=" w-1/2 flex flex-col items-center text-center sm:mt-20 md:w-1/3">
-          <h4 className="mb-1 text-2xl font-bold">Get Notified</h4>
+          <h4 className="mb-1 text-lg sm:text-2xl font-bold">Get Notified</h4>
           {/* <hr className="w-12 font-bold" /> */}
 
-          <p className="mx-6 mt-4 text-lg max-w-60">
+          <p className="mx-6 sm:mt-4 text-sm sm:text-lg max-w-60">
             Be the first to know about the activities of Public Policy and
             Governance
           </p>
@@ -71,10 +71,10 @@ const Footer = () => {
             >
               <input
                 type="email"
-                className="h-10 w-56 rounded-l-md border border-gray-300 px-4 focus:border-blue-300 focus:outline-none focus:ring"
+                className="sm:h-10 h-8 w-36 sm:w-56 rounded-l-md border border-gray-300 px-4 focus:border-blue-300 focus:outline-none focus:ring"
                 placeholder="Type Email"
               />
-              <button className="flex h-10 w-12 items-center justify-center rounded-r-md bg-orange-500 text-white">
+              <button className="flex h-8 sm:h-10 w-8 sm:w-12 items-center justify-center rounded-r-md bg-orange-500 text-white">
                 <i className="fas fa-envelope"></i>
               </button>
             </form>
