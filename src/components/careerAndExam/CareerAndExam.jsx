@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Loading from "../Loading";
 import coverImg from "../../assets/upse.png";
 
 export default function CareerAndExam() {
-  return (
+  const [load, setLoad] = useState(true);
+  setTimeout(() => {
+    setLoad(false);
+  }, 1000);
+
+  return load ? (
+    <Loading />
+  ) : (
     <section className="hero flex flex-col items-center justify-center">
       <div className="sticky top-0 z-0 h-[22rem] w-full overflow-visible">
         <img src={coverImg} alt="" className="h-96 w-full" />
@@ -212,10 +220,11 @@ export default function CareerAndExam() {
                   {" "}
                   PRS India:
                 </a>{" "}
-                PRSIndia (PRS Legislative Research) is crucial for Civil Services
-                 as it provides in-depth analysis of legislation, bills, and policy
-                  issues, all of which are integral parts of the General Studies 
-                  syllabus, particularly the "Governance" and "Polity" sections. 
+                PRSIndia (PRS Legislative Research) is crucial for Civil
+                Services as it provides in-depth analysis of legislation, bills,
+                and policy issues, all of which are integral parts of the
+                General Studies syllabus, particularly the "Governance" and
+                "Polity" sections.
               </li>
               <li className="list-disc">
                 <a
@@ -226,17 +235,21 @@ export default function CareerAndExam() {
                   {" "}
                   IGNOU Books:
                 </a>{" "}
-                IGNOU books can be a helpful supplement for Civil Services prep, 
-                offering in-depth coverage of specific topics within the vast syllabus. 
-                However, they might lack the conciseness needed for the exam and should 
-                be used alongside core resources like NCERT textbooks.
+                IGNOU books can be a helpful supplement for Civil Services prep,
+                offering in-depth coverage of specific topics within the vast
+                syllabus. However, they might lack the conciseness needed for
+                the exam and should be used alongside core resources like NCERT
+                textbooks.
               </li>
-            </ul> <br />
-            For more detailed and researched material, hand-written by our members can be 
-            available <Link to="/resources" className="text-green-600 underline">
-            {" "}
-            here
-          </Link>. 
+            </ul>{" "}
+            <br />
+            For more detailed and researched material, hand-written by our
+            members can be available{" "}
+            <Link to="/resources" className="text-green-600 underline">
+              {" "}
+              here
+            </Link>
+            .
           </p>
         </div>
       </div>

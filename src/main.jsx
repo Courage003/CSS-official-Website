@@ -9,6 +9,8 @@ import "./index.css";
 const LazyAbout = lazy(() => import("./components/about/About.jsx"));
 const LazyHome = lazy(() => import("./components/Home.jsx"));
 const LazyCareer = lazy(() => import("./components/careerAndExam/CareerAndExam.jsx"));
+const LazyResources = lazy(() => import("./components/Resources/Resources.jsx"))
+const LazyEvents = lazy(() => import("./components/Event/Event.jsx"))
 
 const router = createBrowserRouter([
   {
@@ -41,11 +43,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/resources",
-        element: <div>Resources Page <Loading /></div>,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <LazyResources />
+          </Suspense>
+        ),
       },
       {
         path: "/events",
-        element: <div>Not Found : Events page<Loading /></div>,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <LazyEvents />
+          </Suspense>
+        ),
       },
     ],
   },
