@@ -1,15 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import coverImg from "../../assets/upse.png";
 
 export default function CareerAndExam() {
   return (
     <section className="hero flex flex-col items-center justify-center">
-        {/*What is Civil Services?*/}
-      <div className="container flex flex-col items-center justify-center pt-20 md:h-[550px] md:pt-0 lg:w-[1240px]">
-        <h1 className=" font-fredoka text-4xl font-bold md:p-10 lg:text-5xl">
+      <div className="sticky top-0 z-0 h-[22rem] w-full overflow-visible">
+        <img src={coverImg} alt="" className="h-96 w-full" />
+      </div>
+      {/*What is Civil Services?*/}
+      <div className="container z-10 flex flex-col items-center justify-center rounded-t-xl bg-white shadow-xl md:h-[550px] md:rounded-2xl lg:w-[1240px] xl:h-[400px]">
+        <h1 className=" pt-10 font-fredoka text-4xl font-bold lg:text-5xl">
           What is Civil Services?
         </h1>
-        <p className="mx-20 py-8 md:py-0 lg:text-lg ">
+        <p className="mx-20 py-8  lg:text-lg ">
           The civil services in India are the lifeblood of the nation's
           administration. These dedicated, non-elected officials form a vast
           network, stretching from the heart of the government in New Delhi to
@@ -26,80 +30,92 @@ export default function CareerAndExam() {
         </p>
       </div>
       {/*Eligibility & Requirements*/}
-      <div className="flex w-full flex-col items-center justify-center bg-gray-300">
-        <div className="container flex flex-col items-center justify-center py-10 lg:w-[1240px]   lg:py-20">
-          <h1 className=" font-fredoka text-4xl font-bold md:p-10 lg:text-5xl">
+      <div className="flex w-full flex-col items-center justify-center">
+        <div className="container z-10 flex flex-col items-center justify-center bg-zinc-800 text-white shadow-xl md:m-4 md:rounded-2xl  lg:w-[1240px]">
+          <h1 className=" pt-20 font-fredoka text-4xl font-bold lg:text-5xl">
             Eligibility & Requirements
           </h1>
-          <p className="mx-20 py-8 md:py-0 lg:text-lg">
+          <p className="mx-20 py-8 pb-12 lg:text-lg">
             Aspiring for a career in the prestigious Indian Civil Services comes
             with its set of eligibility criteria and requirements. Meeting these
             eligibility requirements is just the first step. To be successful,
             you'll need dedication, perseverance, and a strong foundation in
             various academic subjects covered in the UPSC syllabus. <br />
             <br />
-            <strong className="text-lg">Nationality:</strong> <br />
-            <span className="pl-4">
-              Candidate must be a citizen of India.
-            </span>{" "}
-            <br />
-            <strong className="text-lg">Age :</strong>
-            <br />
-            <ul className="list-inside pl-4">
+            <ul className="grid gap-2">
               <li>
-                {" "}
-                <span className="pr-1 font-semibold">Minimum age:</span>
-                21 years as of 1st August of the exam year
+                <strong className="text-lg">Nationality:</strong> <br />
+                <span className="pl-4">
+                  Candidate must be a citizen of India.
+                </span>{" "}
+                <br />
               </li>
               <li>
-                <span className="pr-1 font-semibold">Maximum age:</span>
-                Varies based on category
-                <ul className="list-inside list-disc pl-4">
+                <strong className="text-lg">Age :</strong>
+                <br />
+                <ul className="list-inside pl-4 pt-2">
                   <li>
-                    General Category & Economically Weaker Sections (EWS): 32
-                    years
+                    {" "}
+                    <span className="pr-1 font-semibold">Minimum age:</span>
+                    21 years as of 1st August of the exam year
                   </li>
-                  <li>Other Backward Classes (OBC): 35 years</li>
                   <li>
-                    Scheduled Castes (SC) & Scheduled Tribes (ST): 37 years
+                    <span className="pr-1 font-semibold">Maximum age:</span>
+                    Varies based on category
+                    <ul className="list-inside list-disc pl-4">
+                      <li>
+                        General Category & Economically Weaker Sections (EWS):
+                        32 years
+                      </li>
+                      <li>Other Backward Classes (OBC): 35 years</li>
+                      <li>
+                        Scheduled Castes (SC) & Scheduled Tribes (ST): 37 years
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </li>
-            </ul>
-            <strong className="text-lg">Educational Qualification:</strong>
-            <ul className="list-outside list-disc pl-8">
               <li>
-                Candidate must hold a bachelor's degree from a recognized
-                university or an equivalent qualification.
+                <strong className="text-lg">Educational Qualification:</strong>
+                <ul className="list-outside list-disc pl-8">
+                  <li>
+                    Candidate must hold a bachelor's degree from a recognized
+                    university or an equivalent qualification.
+                  </li>
+                  <li>
+                    Candidates in their final year of graduation or awaiting
+                    results can appear for the preliminary exam, but must
+                    present proof of passing the degree before the main exam.
+                  </li>
+                </ul>
               </li>
               <li>
-                Candidates in their final year of graduation or awaiting results
-                can appear for the preliminary exam, but must present proof of
-                passing the degree before the main exam.
+                <strong className="text-lg">Number of Attempts:</strong>
+                <br />{" "}
+                <span className="pl-4">
+                  The number of attemps allowed also varies by category:
+                  <ul className="list-inside list-disc pl-8">
+                    <li>General Category & EWS: 6 attempts</li>
+                    <li>OBC: 9 attempts</li>
+                    <li>SC & ST: No limit</li>
+                  </ul>
+                </span>
               </li>
             </ul>
-            <strong className="text-lg">Number of Attempts:</strong>
-            <br /> The number of attemps allowed also varies by category:
-            <ul className="list-outside list-disc pl-8">
-              <li>General Category & EWS: 6 attempts</li>
-              <li>OBC: 9 attempts</li>
-              <li>SC & ST: No limit</li>
-            </ul>{" "}
-            <br />
           </p>
         </div>
       </div>
       {/*Exam Pattern & Syllabus*/}
-      <div className="container flex flex-col items-center justify-center py-20 lg:w-[1240px]">
-        <h1 className=" font-fredoka text-4xl font-bold md:pb-10 lg:text-5xl">
+      <div className="container z-10 flex flex-col items-center justify-center bg-white shadow-xl md:m-4 md:rounded-2xl  lg:w-[1240px]">
+        <h1 className=" pt-20 font-fredoka text-4xl font-bold lg:text-5xl">
           Exam Pattern & Syllabus
         </h1>
-        <p className="mx-20 py-8 md:py-0 lg:text-lg ">
+        <p className="mx-20 py-10 pt-8  lg:text-lg">
           The Civil Services Examination (CSE) conducted by the UPSC is a
           multi-stage process, testing various competencies of aspiring civil
           servants. Here's a breakdown of both the exam pattern and syllabus:{" "}
           <br /> <br />
-          <ul>
+          <ul className="grid gap-3">
             <li>
               <strong>Stage 1: Preliminary Examination (Prelims): </strong>{" "}
               <br />
@@ -130,26 +146,99 @@ export default function CareerAndExam() {
                 problem-solving abilities, and temperament.
               </p>
             </li>
-          </ul> <br />
-          The UPSC provides detailed syllabi for each stage of the exam. You can find these on the <a href="https://upsc.gov.in/sites/default/files/Engl_CSP_2017.pdf" className="text-blue-600 underline"> official UPSC website </a> and a structured analysis of sylabi on <Link to="/resources" className="text-blue-600 underline"> resource</Link> page.
+          </ul>{" "}
+          <br />
+          The UPSC provides detailed syllabi for each stage of the exam. You can
+          find these on the{" "}
+          <a
+            href="https://upsc.gov.in/sites/default/files/Engl_CSP_2017.pdf"
+            className="text-green-600 underline"
+            target="_blank"
+          >
+            {" "}
+            official UPSC website{" "}
+          </a>{" "}
+          and a structured analysis of sylabi on{" "}
+          <Link to="/resources" className="text-green-600 underline">
+            {" "}
+            resource
+          </Link>{" "}
+          page.
         </p>
       </div>
 
       {/*exams page*/}
-      <div className="flex w-full flex-col items-center justify-center bg-gray-300">
-      <div className="container flex flex-col items-center justify-center py-20 lg:w-[1240px]">
-        <h1 className=" font-fredoka text-4xl font-bold md:pb-10 lg:text-5xl">
-          Some Important links
-        </h1>
-        <p className="w-full items-start mx-20 py-8 md:py-0 lg:text-lg ">
-          <ul>
-            <li className="list-disc">
-                    <a href="https://upsc.gov.in/" className="font-bold underline text-blue-700"> UPSE:</a> {" "}
-                    This exam grants entry into coveted services like the Indian Administrative Service (IAS), Indian Foreign Service (IFS), and Indian Police Service (IPS), making it highly competitive.
-            </li>
-          </ul>
-        </p>
-      </div>
+      <div className="mb-20 flex w-full flex-col items-center justify-center">
+        <div className="container z-10 flex flex-col items-center justify-center bg-zinc-900 text-white shadow-xl md:m-4 md:rounded-2xl  lg:w-[1240px]">
+          <h1 className=" pt-20 font-fredoka text-4xl font-bold lg:text-5xl">
+            Some Important links
+          </h1>
+          <p className="mx-20 py-10 pt-8  lg:text-lg">
+            <ul className="grid gap-3">
+              <li className="list-disc">
+                <a
+                  href="https://upsc.gov.in/"
+                  className="font-bold text-green-700 underline"
+                  target="_blank"
+                >
+                  {" "}
+                  UPSC:
+                </a>{" "}
+                This exam grants entry into coveted services like the Indian
+                Administrative Service (IAS), Indian Foreign Service (IFS), and
+                Indian Police Service (IPS), making it highly competitive.
+              </li>
+              <li className="list-disc">
+                <a
+                  href="https://ncert.nic.in/textbook.php"
+                  className="font-bold text-green-700 underline"
+                  target="_blank"
+                >
+                  {" "}
+                  NCERT Textbook:
+                </a>{" "}
+                NCERT books lay a strong foundation for the Civil Services Exam
+                by covering core subjects like history, polity, and economics
+                tested in the General Studies papers. Their clear language and
+                basic structure make them valuable resources for initial
+                understanding and building a strong knowledge base.
+              </li>
+              <li className="list-disc">
+                <a
+                  href="https://prsindia.org/"
+                  className="font-bold text-green-700 underline"
+                  target="_blank"
+                >
+                  {" "}
+                  PRS India:
+                </a>{" "}
+                PRSIndia (PRS Legislative Research) is crucial for Civil Services
+                 as it provides in-depth analysis of legislation, bills, and policy
+                  issues, all of which are integral parts of the General Studies 
+                  syllabus, particularly the "Governance" and "Polity" sections. 
+              </li>
+              <li className="list-disc">
+                <a
+                  href="https://www.egyankosh.ac.in/"
+                  className="font-bold text-green-700 underline"
+                  target="_blank"
+                >
+                  {" "}
+                  IGNOU Books:
+                </a>{" "}
+                IGNOU books can be a helpful supplement for Civil Services prep, 
+                offering in-depth coverage of specific topics within the vast syllabus. 
+                However, they might lack the conciseness needed for the exam and should 
+                be used alongside core resources like NCERT textbooks.
+              </li>
+            </ul> <br />
+            For more detailed and researched material, hand-written by our members can be 
+            available <Link to="/resources" className="text-green-600 underline">
+            {" "}
+            here
+          </Link>. 
+          </p>
+        </div>
       </div>
     </section>
   );
