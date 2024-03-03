@@ -8,21 +8,23 @@ function Home() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = "https://current-affairs-of-india.p.rapidapi.com/today-quiz";
-      const options = {
-        method: "GET",
-        headers: {
-          "X-RapidAPI-Key":
-            "b7c88887a4msh1e2048ba063a89ep189089jsnfefb715af240",
-          "X-RapidAPI-Host": "current-affairs-of-india.p.rapidapi.com",
-        },
-      };
+      const url = 'https://current-affairs-api.p.rapidapi.com/current-affairs?country=us';
+const options = {
+  method: 'GET',
+  headers: {
+    'X-RapidAPI-Key': '7e56c256e2mshe9cf5df927f18aap15112ejsn58f3616cca84',
+    'X-RapidAPI-Host': 'current-affairs-api.p.rapidapi.com'
+  }
+};
 
       try {
         const response = await fetch(url, options);
         const result = await response.json();
-        console.log(result);
-        setData(result);
+        const filteredValue = result.current_affairs.filter((item)=>{
+          return item.author && item.urlToImage
+        })
+        console.log(filteredValue);
+        setData(filteredValue);
       } catch (error) {
         console.error(error);
       }
@@ -70,7 +72,7 @@ function Home() {
         </div>
       </div>
 
-      <section className="hero flex h-[550px] items-center justify-center bg-white">
+      <section className="hero flex h-[750px] items-center justify-center bg-white">
         <div className="container text-xl text-orange-700 ">
           <Carousel value={data} />
         </div>
