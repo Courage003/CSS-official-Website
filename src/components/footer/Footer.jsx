@@ -36,7 +36,7 @@ const Footer = () => {
             <h4 className="mb-1 text-lg sm:text-2xl font-bold">Follow Us</h4>
             {/* <hr className="w-12 font-bold" /> */}
 
-            <div className="flex flex-col text-sm sm:text-lg items-start justify-between  gap-2 pt-4">
+            <div className="flex flex-col text-sm sm:text-lg items-start justify-between gap-1 sm:gap-2 pt-1 sm:pt-4">
               <a href={linkedin} className=" hover:text-sky-700" target="_blank">
                 <i
                   className="fa fa-linkedin pr-2"
@@ -56,15 +56,15 @@ const Footer = () => {
           </div>
         </div>
         {/* Column 3 */}
-        <div className=" w-1/2 flex flex-col items-center text-center sm:mt-20 md:w-1/3">
+        <div className=" w-1/2 flex flex-col items-center text-center mt-3 sm:mt-20 md:w-1/3">
           <h4 className="mb-1 text-lg sm:text-2xl font-bold">Get Notified</h4>
           {/* <hr className="w-12 font-bold" /> */}
 
-          <p className="mx-6 sm:mt-4 text-sm sm:text-lg max-w-60">
+          <p className="mx-6 sm:mt-4 text-xs sm:text-lg max-w-60">
             Be the first to know about the activities of Public Policy and
             Governance
           </p>
-          <div className="pt-6">
+          <div className="pt-4 sm:pt-6">
             <form
               action=""
               className="flex flex-row items-center justify-center"
