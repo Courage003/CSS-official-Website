@@ -13,7 +13,7 @@ export default function CareerAndExam() {
     <Loading />
   ) : (
     <section className="hero flex flex-col items-center justify-center">
-      <div className="sticky top-0 z-0 h-[22rem] w-full overflow-visible">
+      <div className="sticky top-0 h-[22rem] w-full overflow-visible">
         <img src={coverImg} alt="" className="h-96 w-full" />
       </div>
       {/*What is Civil Services?*/}
@@ -176,8 +176,8 @@ export default function CareerAndExam() {
       </div>
 
       {/*exams page*/}
-      <div className="mb-20 flex w-full flex-col items-center justify-center">
-        <div className="container z-10 flex flex-col items-center justify-center bg-zinc-900 text-white shadow-xl md:m-4 md:rounded-2xl  lg:w-[1240px]">
+      <div className="sm:mb-20 flex w-full flex-col items-center justify-center">
+        <div className="container pb-12 z-10 flex flex-col items-center justify-center bg-zinc-900 text-white shadow-xl md:m-4 md:rounded-2xl  lg:w-[1240px]">
           <h1 className=" pt-20 font-fredoka text-4xl font-bold lg:text-5xl">
             Some Important links
           </h1>
