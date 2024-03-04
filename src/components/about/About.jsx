@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import grp from "../../assets/grpPhoto.jpg";
-import Card from "../UI/Card";
+import Card from "./Card";
 import Loading from "../Loading";
 
 export default function About() {
