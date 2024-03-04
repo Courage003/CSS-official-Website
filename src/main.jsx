@@ -1,10 +1,16 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.jsx";
-import { About, Home } from "./components/index.js";
+
+import { Loading } from "./components/index.js";
 import "./index.css";
+const LazyAbout = lazy(() => import("./components/about/About.jsx"));
+const LazyHome = lazy(() => import("./components/Home.jsx"));
+const LazyCareer = lazy(() => import("./components/careerAndExam/CareerAndExam.jsx"));
+const LazyResources = lazy(() => import("./components/Resources/Resources.jsx"))
+const LazyEvents = lazy(() => import("./components/Event/Event.jsx"))
 
 const router = createBrowserRouter([
   {
@@ -13,24 +19,44 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <LazyHome />
+          </Suspense>
+        ),
       },
       {
         path: "/about",
-        element: <About/>,
+        element: (
+          <Suspense fallback={<Loading />}>
+            <LazyAbout />
+          </Suspense>
+        ),
       },
       {
         path: "/career",
-        element: <div>Not FOund: Career page</div>
+        element: (
+          <Suspense fallback={<Loading />}>
+            <LazyCareer />
+          </Suspense>
+        ),
       },
       {
         path: "/resources",
-        element: <div>Resources Page</div>
+        element: (
+          <Suspense fallback={<Loading />}>
+            <LazyResources />
+          </Suspense>
+        ),
       },
       {
         path: "/events",
-        element: <div>Not Found : Events page</div>
-      }
+        element: (
+          <Suspense fallback={<Loading />}>
+            <LazyEvents />
+          </Suspense>
+        ),
+      },
     ],
   },
 ]);
@@ -38,5 +64,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

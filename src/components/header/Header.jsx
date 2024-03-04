@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Sidemenu from "./Sidemenu";
 import logo from "../../assets/logo.jpg";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -33,7 +33,7 @@ function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 md:bg-gray-500 md:bg-opacity-10 md:backdrop-blur-sm ">
+    <header className="fixed w-full top-0 z-50  md:bg-opacity-0 md:backdrop-blur-sm hover:bg-opacity-60 transition duration-500 md:hover:bg-white  ">
       <div className="relative mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-20">
           <div className="flex-1 md:flex md:items-center md:gap-12">
@@ -47,47 +47,56 @@ function Header() {
             </Link>
           </div>
 
-          <div className="font-inter md:flex md:items-center md:gap-12">
+         <div className="font-inter md:flex md:items-center md:gap-12">
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm lg:text-lg">
                 <li>
-                  <Link
+                  <NavLink
+                    to="/"
+                    className={({isActive}) => `transition hover:text-amber-700 ${isActive ? "text-amber-900" : "text-zinc-800"}`}
+                  >
+                    {" "}
+                    Home{" "}
+                  </NavLink>
+                </li>
+              <li>
+                  <NavLink
                     to="/about"
-                    className="text-zinc-800 transition hover:text-zinc-800/75 hover:drop-shadow-[1px_0px_0px_#ffffff]"
+                    className={({isActive}) => ` transition hover:text-amber-700 ${isActive ? "text-amber-900" : "text-zinc-800"}`}
                   >
                     {" "}
                     About Us{" "}
-                  </Link>
+                  </NavLink>
                 </li>
 
-                <li>
-                  <Link
+               <li>
+                  <NavLink
                     to="/career"
-                    className="text-zinc-800 transition hover:text-zinc-800/75 hover:drop-shadow-[1px_0px_0px_#ffffff]"
+                    className={({isActive}) => ` transition hover:text-amber-700 ${isActive ? "text-amber-900" : "text-zinc-800"}`}
                   >
                     {" "}
                     Career and Exams{" "}
-                  </Link>
+                  </NavLink>
                 </li>
 
-                <li>
-                  <Link
-                    className="text-zinc-800 transition hover:text-zinc-800/75 hover:drop-shadow-[1px_0px_0px_#ffffff]"
+               <li>
+                  <NavLink
                     to="/resources"
+                    className={({isActive}) => ` transition hover:text-amber-700 ${isActive ? "text-amber-900" : "text-zinc-800"}`}
                   >
                     {" "}
                     Resources{" "}
-                  </Link>
+                  </NavLink>
                 </li>
 
-                <li>
-                  <Link
-                    className="text-zinc-800 transition hover:text-zinc-800/75 hover:drop-shadow-[1px_0px_0px_#ffffff]"
+               <li>
+                  <NavLink
+                    className={({isActive}) => ` transition hover:text-amber-700 ${isActive ? "text-amber-900" : "text-zinc-800"}`}
                     to="/events"
                   >
                     {" "}
                     Events{" "}
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
             </nav>
@@ -139,6 +148,7 @@ function Header() {
               ref={sidemenuRef}
               onMouseEnter={handleSidemenuMouseEnter}
               onMouseLeave={handleSidemenuMouseLeave}
+              onClick={handleSidemenuMouseLeave}
               className={`dark:bg-dark-2 absolute right-4 top-full w-full max-w-[250px] rounded-lg border bg-white px-6 py-3 shadow lg:w-full lg:max-w-full lg:shadow-none lg:dark:bg-transparent ${!open && "hidden"} `}
             >
               <Sidemenu />
