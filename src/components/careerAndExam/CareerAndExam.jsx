@@ -13,7 +13,7 @@ export default function CareerAndExam() {
     <Loading />
   ) : (
     <section className="hero flex flex-col items-center justify-center">
-      <div className="sticky top-0 z-0 h-[22rem] w-full overflow-visible">
+      <div className="sticky top-0 h-[22rem] w-full overflow-visible">
         <img src={coverImg} alt="" className="h-96 w-full" />
       </div>
       {/*What is Civil Services?*/}
@@ -21,7 +21,7 @@ export default function CareerAndExam() {
         <h1 className=" pt-10 font-fredoka text-4xl font-bold lg:text-5xl">
           What is Civil Services?
         </h1>
-        <p className="mx-20 py-8  lg:text-lg ">
+        <p className="mx-8 sm:mx-20 py-8  lg:text-lg ">
           The civil services in India are the lifeblood of the nation's
           administration. These dedicated, non-elected officials form a vast
           network, stretching from the heart of the government in New Delhi to
@@ -43,7 +43,7 @@ export default function CareerAndExam() {
           <h1 className=" pt-20 font-fredoka text-4xl font-bold lg:text-5xl">
             Eligibility & Requirements
           </h1>
-          <p className="mx-20 py-8 pb-12 lg:text-lg">
+          <p className="mx-8 sm:mx-20 py-8 pb-12 lg:text-lg">
             Aspiring for a career in the prestigious Indian Civil Services comes
             with its set of eligibility criteria and requirements. Meeting these
             eligibility requirements is just the first step. To be successful,
@@ -118,7 +118,7 @@ export default function CareerAndExam() {
         <h1 className=" pt-20 font-fredoka text-4xl font-bold lg:text-5xl">
           Exam Pattern & Syllabus
         </h1>
-        <p className="mx-20 py-10 pt-8  lg:text-lg">
+        <p className="mx-8 sm:mx-20 py-10 pt-8  lg:text-lg">
           The Civil Services Examination (CSE) conducted by the UPSC is a
           multi-stage process, testing various competencies of aspiring civil
           servants. Here's a breakdown of both the exam pattern and syllabus:{" "}
@@ -176,12 +176,12 @@ export default function CareerAndExam() {
       </div>
 
       {/*exams page*/}
-      <div className="mb-20 flex w-full flex-col items-center justify-center">
-        <div className="container z-10 flex flex-col items-center justify-center bg-zinc-900 text-white shadow-xl md:m-4 md:rounded-2xl  lg:w-[1240px]">
+      <div className="sm:mb-20 flex w-full flex-col items-center justify-center">
+        <div className="container pb-12 z-10 flex flex-col items-center justify-center bg-zinc-900 text-white shadow-xl md:m-4 md:rounded-2xl  lg:w-[1240px]">
           <h1 className=" pt-20 font-fredoka text-4xl font-bold lg:text-5xl">
             Some Important links
           </h1>
-          <p className="mx-20 py-10 pt-8  lg:text-lg">
+          <p className="mx-8 sm:mx-20 py-10 pt-8  lg:text-lg">
             <ul className="grid gap-3">
               <li className="list-disc">
                 <a

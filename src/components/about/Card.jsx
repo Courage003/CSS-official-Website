@@ -3,7 +3,7 @@ import { people } from "./data";
 
 export default function Card() {
   return (
-    <div className="w-full bg-white pb-24 pt-16 sm:pb-32">
+    <div className="w-full bg-white pb-24 pt-8 sm:pt-16 sm:pb-32">
       <div className="0 mx-auto max-w-7xl px-6 lg:px-8 ">
         <ul
           role="list"

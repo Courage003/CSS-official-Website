@@ -17,7 +17,7 @@ export default function About() {
         className="mb-12 w-full p-24 text-center text-white"
         style={{ background: "#000" }}
       >
-        <h4 className="text-5xl font-bold">#KnowUs</h4>
+        <h4 className="text-3xl sm:text-5xl font-bold">#KnowUs</h4>
         <p>EMPOWER. INSPIRE. TRANSFORM.</p>
       </div>
       <div className="">
@@ -32,7 +32,7 @@ export default function About() {
           </div>
           <div className="ml-1 flex flex-col items-center justify-center lg:w-1/2">
             <h4 className="text-center text-4xl font-bold">Who We Are ?</h4>
-            <p className="tracking-lg w-fit px-16 pt-4 text-lg leading-6 lg:px-12 lg:pr-16 ">
+            <p className="tracking-lg w-fit px-7 sm:px-16 pt-4 sm:text-lg leading-6 lg:px-12 lg:pr-16 ">
               Civil Service Society, NIT Agartala serves as a dynamic platform
               for impassioned students to rigorously examine, deliberate upon,
               and actively engage with current public Policy and governance
@@ -57,7 +57,7 @@ export default function About() {
       </div>
 
       <div className="flex flex-col items-center justify-center">
-        <h1 className="mb-5 font-inter text-5xl font-semibold underline">
+        <h1 className="font-inter text-3xl sm:text-5xl font-semibold underline">
           Our Teams
         </h1>
         <Card />
