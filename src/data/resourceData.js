@@ -4,7 +4,7 @@ export const links = [
         title: "This is new card title",
         content: "Follow the below link to proceed.",
         category: "Economics",
-        link: "abc",
+        link: "www.google.com",
         type: "read"
     }, 
     { 

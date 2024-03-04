@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Loading from "../Loading";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import {eventData} from "./eventData"
+import {eventData} from "../../data/eventData"
 
 export default function Event() {
     const [load, setLoad] = useState(true);

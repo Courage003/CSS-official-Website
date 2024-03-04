@@ -14,7 +14,7 @@ export default function CareerAndExam() {
   ) : (
     <section className="hero flex flex-col items-center justify-center">
       <div className=" sm:sticky top-0 h-[22rem] w-full overflow-visible">
-        <img src={coverImg} alt="" className="h-96 w-full" />
+        <img src={coverImg} alt="" className="h-96 w-full object-cover object-bottom" />
       </div>
       {/*What is Civil Services?*/}
       <div className="container z-10 flex flex-col items-center justify-center rounded-t-xl bg-white shadow-xl md:h-[550px] md:rounded-2xl lg:w-[1240px] xl:h-[400px]">

@@ -1,5 +1,5 @@
 import React from "react";
-import { people } from "./data";
+import { people } from "../../data/teamsData";
 
 export default function Card() {
   return (

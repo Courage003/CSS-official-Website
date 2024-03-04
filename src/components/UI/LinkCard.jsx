@@ -28,7 +28,7 @@ function LinkCard({ data }) {
     </div>
     <div className="px-6 pt-4 pb-4 flex items-center justify-start text-gray-600  bottom-0">
       <i className="fa fa-arrow-right" aria-hidden="true"></i>
-      <a className="inline-block pl-2 font-semibold rounded cursor-pointer">
+      <a className="inline-block pl-2 font-semibold rounded cursor-pointer" href={data.link} target="_blank">
         {value[data.type]}
       </a>
     </div>

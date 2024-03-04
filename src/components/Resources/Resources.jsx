@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Loading from "../Loading";
 import LinkCard from "../UI/LinkCard";
-import { links, category } from "./linkData";
+import { links, category } from "../../data/resourceData";
 
 function Resources() {
   const [load, setLoad] = useState(true);
