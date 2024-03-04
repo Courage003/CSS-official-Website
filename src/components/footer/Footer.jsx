@@ -8,7 +8,7 @@ const linkedin = "https://www.linkedin.com/in/civil-services-society-nit-a-25a19
 
 const Footer = () => {
   return (
-    <footer className="bg-black py-8 sm:py-12 text-white">
+    <footer className="bg-black pt-8 pb-2 sm:pt-12 text-white">
       <div className="container mx-auto flex flex-wrap justify-around px-4">
         {/* Column 1 */}
         <div className="mb-4 w-full md:w-1/3 md:text-center">
@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Column 2 */}
-        <div className="mb-4 w-1/2 md:w-1/3 md:text-center">
+        <div className="mb-4 w-full md:w-1/3 md:text-center">
           <div className="mt-5 flex flex-col items-center justify-between sm:mt-20">
             <h4 className="mb-1 text-lg sm:text-2xl font-bold">Follow Us</h4>
             {/* <hr className="w-12 font-bold" /> */}
@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Column 3 */}
-        <div className=" w-1/2 flex flex-col items-center text-center mt-3 sm:mt-20 md:w-1/3">
+        <div className=" w-full flex flex-col items-center text-center mt-3 sm:mt-20 md:w-1/3">
           <h4 className="mb-1 text-lg sm:text-2xl font-bold">Get Notified</h4>
           {/* <hr className="w-12 font-bold" /> */}
 
@@ -81,6 +81,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="text-xs text-center mt-6">Copyright © | CSS 2024</div>
     </footer>
   );
 };
