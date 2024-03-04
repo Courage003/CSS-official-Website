@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import Loading from "../Loading";
+import LinkCard from "../UI/LinkCard";
+import { links, category } from "./linkData";
 
 function Resources() {
   const [load, setLoad] = useState(true);
+  const [currCategory, setCurrCategory] = useState("All");
+
   setTimeout(() => {
     setLoad(false);
   }, 1000);
 
+  console.log("currCategory", currCategory);
   return load ? (
     <Loading />
   ) : (
@@ -15,15 +20,35 @@ function Resources() {
         className="w-full p-24 text-center text-white"
         style={{ background: "#000" }}
       >
-        <h4 className="pb-2 text-5xl font-semibold">#Resources</h4>
-        <p>INFORMATION. INTEGRITY. INTENSION</p>
+        <h4 className="text-3xl font-bold sm:text-5xl">#Resources</h4>
+        <p>INFORMATION. INTEGRITY. INTENSION.</p>
       </div>
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+      <section className=" ">
+        {/* Category filter */}
+        <div className="w-full items-center p-8">
+          <div className="flex items-center justify-start gap-3">
+            {category.map((cat) => (
+              <button
+                className={`rounded bg-gray-100 px-4 py-1 hover:bg-gray-300 ${currCategory == cat ? "bg-gray-300" : ""} `}
+                onClick={() => setCurrCategory(cat)}
+              >
+                {cat}
+              </button>
+            ))}
+          </div>
+        </div>
+
         {/* Display resources*/}
-        
+        <div className="m-12 grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {currCategory === "All" // Use === for strict comparison
+            ? links.map((link) => <LinkCard data={link} />)
+            : links
+                .filter((link) => link.category === currCategory)
+                .map((link) => <LinkCard data={link} />)}
+        </div>
       </section>
     </div>
   );
 }
-
 export default Resources;

@@ -13,7 +13,7 @@ export default function CareerAndExam() {
     <Loading />
   ) : (
     <section className="hero flex flex-col items-center justify-center">
-      <div className="sticky top-0 h-[22rem] w-full overflow-visible">
+      <div className=" sm:sticky top-0 h-[22rem] w-full overflow-visible">
         <img src={coverImg} alt="" className="h-96 w-full" />
       </div>
       {/*What is Civil Services?*/}

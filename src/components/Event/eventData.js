@@ -30,3 +30,4 @@ export const eventData = [
         date:"Every Sunday"
     }
 ]
+

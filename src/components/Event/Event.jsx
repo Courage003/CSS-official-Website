@@ -16,8 +16,8 @@ export default function Event() {
     <div className="mb-6">
       <div className="w-full p-24 text-center text-white"
         style={{ background: "#000" }}>
-        <h4 className="text-5xl font-semibold pb-2">#Activities</h4>
-        <p>DEDICATION. DISCIPLINE. DETERMINATION</p>
+        <h4 className="text-3xl sm:text-5xl font-bold">#Activities</h4>
+        <p>DEDICATION. DISCIPLINE. DETERMINATION.</p>
       </div>
       <VerticalTimeline lineColor='#000'>
         {eventData.map((event)=>(

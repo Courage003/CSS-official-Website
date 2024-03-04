@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily:{
         fredoka: ["Fredoka One", "cursive"],
-        inter: ["Inter", "sans-serif"]
+        inter: ["Inter", "sans-serif"],
+        roboto: ["Roboto"],
       }
     },
   },
