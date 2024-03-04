@@ -8,7 +8,7 @@ function Home() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const url = 'https://current-affairs-api.p.rapidapi.com/current-affairs?country=us';
+      const url = 'https://current-affairs-api.p.rapidapi.com/current-affairs?country=in';
 const options = {
   method: 'GET',
   headers: {
