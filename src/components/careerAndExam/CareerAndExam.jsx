@@ -21,7 +21,7 @@ export default function CareerAndExam() {
         <h1 className=" pt-10 font-fredoka text-4xl font-bold lg:text-5xl">
           What is Civil Services?
         </h1>
-        <p className="mx-8 sm:mx-20 py-8  lg:text-lg ">
+        <p className="mx-8 sm:mx-20 py-8 text-justify lg:text-lg ">
           The civil services in India are the lifeblood of the nation's
           administration. These dedicated, non-elected officials form a vast
           network, stretching from the heart of the government in New Delhi to
@@ -118,7 +118,7 @@ export default function CareerAndExam() {
         <h1 className=" pt-20 font-fredoka text-4xl font-bold lg:text-5xl">
           Exam Pattern & Syllabus
         </h1>
-        <p className="mx-8 sm:mx-20 py-10 pt-8  lg:text-lg">
+        <p className="mx-8 sm:mx-20 text-justify py-10 pt-8  lg:text-lg">
           The Civil Services Examination (CSE) conducted by the UPSC is a
           multi-stage process, testing various competencies of aspiring civil
           servants. Here's a breakdown of both the exam pattern and syllabus:{" "}
@@ -181,7 +181,7 @@ export default function CareerAndExam() {
           <h1 className=" pt-20 font-fredoka text-4xl font-bold lg:text-5xl">
             Some Important links
           </h1>
-          <p className="mx-8 sm:mx-20 py-10 pt-8  lg:text-lg">
+          <p className="mx-8 sm:mx-20  py-10 pt-8  lg:text-lg">
             <ul className="grid gap-3">
               <li className="list-disc">
                 <a

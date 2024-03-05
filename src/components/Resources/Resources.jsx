@@ -27,11 +27,11 @@ function Resources() {
       <section className=" ">
         {/* Category filter */}
         <div className="w-full items-center p-8">
-          <div className="flex items-center justify-start gap-3">
+          <div className="flex items-center justify-start pb-2 gap-3 overflow-auto">
             {category.map((cat) => (
               <button
                 className={`rounded bg-gray-100 px-4 py-1 hover:bg-gray-300 ${currCategory == cat ? "bg-gray-300" : ""} `}
-                onClick={() => setCurrCategory(cat)}
+                onClick={() => setCurrCategory(cat)}                                       
               >
                 {cat}
               </button>
