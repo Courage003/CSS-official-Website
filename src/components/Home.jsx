@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import backVideo from "../assets/home_page__video.mp4";
 import Carousel from "./UI/Carousel";
 import Loading from "./Loading";
+import homePic from "../assets/homepage_pic.png";
 
 function Home() {
+  const bgImage ="https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    // "https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -44,8 +47,9 @@ function Home() {
   ) : (
     <div className="hero min-h-screen">
       <div
-        className="relative flex h-screen  
+        className="relative flex h-screen  bg-auto bg-center
         flex-col items-center justify-center overflow-hidden font-inter text-white"
+        style={{ backgroundImage: "url(" + homePic + ")" }}
       >
         <video
           src={backVideo}
@@ -74,11 +78,11 @@ function Home() {
         </div>
       </div>
       <div
-        className="w-full flex flex-col items-center justify-center px-8 py-16 sm:p-24 text-center text-white"
+        className="flex w-full flex-col items-center justify-center px-8 py-16 text-center text-white sm:p-24"
         style={{ background: "#000" }}
       >
         <h4 className="text-3xl font-bold sm:text-5xl">#OurMotto</h4>
-        <p className="container lg:w-3/4 text-sm sm:text-lg text-justify font-inter pt-3 sm:pt-6 sm:leading-7">
+        <p className="container pt-3 text-justify font-inter text-sm sm:pt-6 sm:text-lg sm:leading-7 lg:w-3/4">
           The CSS Club is dedicated to supporting civil service aspirants by
           offering a platform for engaging discussions and seeking advice on
           various subjects related to civil examinations. Our mission includes
@@ -97,7 +101,10 @@ function Home() {
         </p>
       </div>
 
-      <section className="hero flex h-[750px] overflow-hidden items-center justify-center bg-white">
+      <section
+        className="hero flex h-[750px] items-center justify-center overflow-hidden bg-white bg-cover"
+        style={{ backgroundImage: "url(" + bgImage + ")" }}
+      >
         <div className="container text-xl text-orange-700 ">
           <Carousel value={data} />
         </div>
