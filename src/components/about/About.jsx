@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import grp from "../../assets/grpPhoto.jpg";
 import Card from "./Card";
 import Loading from "../Loading";
+import { people,core,tech,management,graphic,research,social} from "../../data/teamsData";
 
 export default function About() {
   const [load, setLoad] = useState(true);
@@ -17,7 +18,7 @@ export default function About() {
         className="mb-12 w-full p-24 text-center text-white"
         style={{ background: "#000" }}
       >
-        <h4 className="text-3xl sm:text-5xl font-bold">#KnowUs</h4>
+        <h4 className="text-3xl font-bold sm:text-5xl">#KnowUs</h4>
         <p>EMPOWER. INSPIRE. TRANSFORM.</p>
       </div>
       <div className="">
@@ -32,7 +33,7 @@ export default function About() {
           </div>
           <div className="ml-1 flex flex-col items-center justify-center lg:w-1/2">
             <h4 className="text-center text-4xl font-bold">Who We Are ?</h4>
-            <p className="tracking-lg text-justify w-fit px-7 sm:px-16 pt-4 sm:text-lg leading-6 lg:px-12 lg:pr-16 ">
+            <p className="tracking-lg w-fit px-7 pt-4 text-justify leading-6 sm:px-16 sm:text-lg lg:px-12 lg:pr-16 ">
               Civil Service Society, NIT Agartala serves as a dynamic platform
               for impassioned students to rigorously examine, deliberate upon,
               and actively engage with current public Policy and governance
@@ -45,22 +46,93 @@ export default function About() {
               dedicated to shaping a more informed, effective, and equitable
               governance landscape.
             </p>
-            {/* <br />
-
-            <br /> */}
-            {/* <marquee loop="-1" scrollAmount="5" width="20%" className="bg-slate-700 text-white">
-                Create stunning images with as much or as little control as you
-                like thanks to a choice of Basic and Creative modes.
-            </marquee> */}
           </div>
         </div>
       </div>
 
       <div className="flex flex-col items-center justify-center">
-        <h1 className="font-inter text-3xl sm:text-5xl font-semibold underline">
+        <h1 className="font-inter text-3xl font-semibold underline sm:text-5xl">
           Our Teams
         </h1>
-        <Card />
+        <div className="w-full bg-white pb-24 pt-8 sm:pb-32 sm:pt-16">
+          <div className="0 mx-auto max-w-7xl px-6 lg:px-8 pb-20">
+            <h2 className="text-center text-3xl mb-8 font-semibold">Executive Team</h2>
+            <ul
+              role="list"
+              className="grid grid-cols-2 items-center justify-center gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-3"
+            >
+              {people.map((person) => (
+                <Card person={person} />
+              ))}
+            </ul>
+          </div>
+          <div className="0 mx-auto max-w-7xl px-6 lg:px-8 pb-20">
+            <h2 className="text-center text-3xl mb-8 font-semibold">Technical Team</h2>
+            <ul
+              role="list"
+              className="grid grid-cols-2 items-center justify-center gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-3"
+            >
+              {tech.map((person) => (
+                <Card person={person} />
+              ))}
+            </ul>
+          </div>
+          <div className="0 mx-auto max-w-7xl px-6 lg:px-8 pb-20">
+            <h2 className="text-center text-3xl mb-8 font-semibold">Core Team</h2>
+            <ul
+              role="list"
+              className="grid grid-cols-2 items-center justify-center gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-3"
+            >
+              {core.map((person) => (
+                <Card person={person} />
+              ))}
+            </ul>
+          </div>
+          <div className="0 mx-auto max-w-7xl px-6 lg:px-8 pb-20">
+            <h2 className="text-center text-3xl mb-8 font-semibold">Event Management Team</h2>
+            <ul
+              role="list"
+              className="grid grid-cols-2 items-center justify-center gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-3"
+            >
+              {management.map((person) => (
+                <Card person={person} />
+              ))}
+            </ul>
+          </div>
+          <div className="0 mx-auto max-w-7xl px-6 lg:px-8 pb-20">
+            <h2 className="text-center text-3xl mb-8 font-semibold">Graphic Design Team</h2>
+            <ul
+              role="list"
+              className="grid grid-cols-2 items-center justify-center gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-3"
+            >
+              {graphic.map((person) => (
+                <Card person={person} />
+              ))}
+            </ul>
+          </div>
+          <div className="0 mx-auto max-w-7xl px-6 lg:px-8 pb-20">
+            <h2 className="text-center text-3xl mb-8 font-semibold">Research & Development Team</h2>
+            <ul
+              role="list"
+              className="grid grid-cols-2 items-center justify-center gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-3"
+            >
+              {research.map((person) => (
+                <Card person={person} />
+              ))}
+            </ul>
+          </div>
+          <div className="0 mx-auto max-w-7xl px-6 lg:px-8 pb-20">
+            <h2 className="text-center text-3xl mb-8 font-semibold">Social Media and PR</h2>
+            <ul
+              role="list"
+              className="grid grid-cols-2 items-center justify-center gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-3"
+            >
+              {social.map((person) => (
+                <Card person={person} />
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   );

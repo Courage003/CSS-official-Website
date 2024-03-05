@@ -13,7 +13,7 @@ export const people = [
         name:"Satwik Gupta",
         imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471916/members/Satwik_Gupta_gop6uv.jpg",
         imageAlt:"satwik",
-        role:"General Secretary",
+        role:"General Secretary & Technical Head",
         linkedinUrl: "https://www.linkedin.com/in/satwikgupta18",
         twitterUrl: "https://twitter.com/SatwikGupta1801"
     },
@@ -25,7 +25,10 @@ export const people = [
         role:"Head of Operations",
         // linkedinUrl:,
         // twitterUrl:
-    },
+    }
+]
+
+export const tech = [
     {
         id:203,
         name:"Lalit Kumar Jangir",
@@ -52,32 +55,153 @@ export const people = [
         role:"Member",
         // linkedinUrl:,
         // twitterUrl:
+    }
+]
+
+export const core = [
+    {
+        id:203,
+        name:"Lalit Kumar Jangir",
+        imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/v1708473082/members/pic_u5baug.jpg",
+        imageAlt:"chhotu",
+        role:"Technical Lead",
+        // linkedinUrl:,
+        // twitterUrl:
     },
     {
-        id:136,
-        name:"Amitabh Anand",
-        imageUrl: "https://res.cloudinary.com/dm1tnakkg/image/upload/v1708471907/members/A__Anand_ivau8f.jpg",
-        imageAlt: "amitabh",
-        role: "",
-    //     linkedinUrl:,
-    //     twitterUrl:
+        id:104,
+        name:"Sujal Patel",
+        imageUrl: "https://res.cloudinary.com/dm1tnakkg/image/upload/c_crop,ar_1:1/v1708471919/members/Sujal_Patel_c3fenl.jpg",
+        imageAlt: "sujal",
+        role: "Member",
+        //     linkedinUrl:,
+        //     twitterUrl:
     },
-    // {
-    //     id:1,
-    //     name:,
-    //     imageUrl:,
-    //     imageAlt:,
-    //     role:,
-    //     linkedinUrl:,
-    //     twitterUrl:
-    // },
-    // {
-    //     id:1,
-    //     name:,
-    //     imageUrl:,
-    //     imageAlt:,
-    //     role:,
-    //     linkedinUrl:,
-    //     twitterUrl:
-    // },
+    {
+        id:125,
+        name:"Divyam Singh",
+        imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471913/members/Divyam_Raj_Singh_rzoy5t.jpg",
+        imageAlt:"divyam",
+        role:"Member",
+        // linkedinUrl:,
+        // twitterUrl:
+    }
 ]
+
+export const management = [
+    {
+        id:203,
+        name:"Lalit Kumar Jangir",
+        imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/v1708473082/members/pic_u5baug.jpg",
+        imageAlt:"chhotu",
+        role:"Technical Lead",
+        // linkedinUrl:,
+        // twitterUrl:
+    },
+    {
+        id:104,
+        name:"Sujal Patel",
+        imageUrl: "https://res.cloudinary.com/dm1tnakkg/image/upload/c_crop,ar_1:1/v1708471919/members/Sujal_Patel_c3fenl.jpg",
+        imageAlt: "sujal",
+        role: "Member",
+        //     linkedinUrl:,
+        //     twitterUrl:
+    },
+    {
+        id:125,
+        name:"Divyam Singh",
+        imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471913/members/Divyam_Raj_Singh_rzoy5t.jpg",
+        imageAlt:"divyam",
+        role:"Member",
+        // linkedinUrl:,
+        // twitterUrl:
+    }
+]
+
+export const graphic = [
+    {
+        id:203,
+        name:"Lalit Kumar Jangir",
+        imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/v1708473082/members/pic_u5baug.jpg",
+        imageAlt:"chhotu",
+        role:"Technical Lead",
+        // linkedinUrl:,
+        // twitterUrl:
+    },
+    {
+        id:104,
+        name:"Sujal Patel",
+        imageUrl: "https://res.cloudinary.com/dm1tnakkg/image/upload/c_crop,ar_1:1/v1708471919/members/Sujal_Patel_c3fenl.jpg",
+        imageAlt: "sujal",
+        role: "Member",
+        //     linkedinUrl:,
+        //     twitterUrl:
+    },
+    {
+        id:125,
+        name:"Divyam Singh",
+        imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471913/members/Divyam_Raj_Singh_rzoy5t.jpg",
+        imageAlt:"divyam",
+        role:"Member",
+        // linkedinUrl:,
+        // twitterUrl:
+    }
+]
+
+export const research = [
+    {
+        id:203,
+        name:"Lalit Kumar Jangir",
+        imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/v1708473082/members/pic_u5baug.jpg",
+        imageAlt:"chhotu",
+        role:"Technical Lead",
+        // linkedinUrl:,
+        // twitterUrl:
+    },
+    {
+        id:104,
+        name:"Sujal Patel",
+        imageUrl: "https://res.cloudinary.com/dm1tnakkg/image/upload/c_crop,ar_1:1/v1708471919/members/Sujal_Patel_c3fenl.jpg",
+        imageAlt: "sujal",
+        role: "Member",
+        //     linkedinUrl:,
+        //     twitterUrl:
+    },
+    {
+        id:125,
+        name:"Divyam Singh",
+        imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471913/members/Divyam_Raj_Singh_rzoy5t.jpg",
+        imageAlt:"divyam",
+        role:"Member",
+        // linkedinUrl:,
+        // twitterUrl:
+    }
+]
+
+export const social = [{
+    id:203,
+    name:"Lalit Kumar Jangir",
+    imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/v1708473082/members/pic_u5baug.jpg",
+    imageAlt:"chhotu",
+    role:"Technical Lead",
+    // linkedinUrl:,
+    // twitterUrl:
+},
+{
+    id:104,
+    name:"Sujal Patel",
+    imageUrl: "https://res.cloudinary.com/dm1tnakkg/image/upload/c_crop,ar_1:1/v1708471919/members/Sujal_Patel_c3fenl.jpg",
+    imageAlt: "sujal",
+    role: "Member",
+    //     linkedinUrl:,
+    //     twitterUrl:
+},
+{
+    id:125,
+    name:"Divyam Singh",
+    imageUrl:"https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471913/members/Divyam_Raj_Singh_rzoy5t.jpg",
+    imageAlt:"divyam",
+    role:"Member",
+    // linkedinUrl:,
+    // twitterUrl:
+}]

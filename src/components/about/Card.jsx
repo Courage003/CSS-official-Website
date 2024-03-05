@@ -1,15 +1,8 @@
 import React from "react";
-import { people } from "../../data/teamsData";
 
-export default function Card() {
+export default function Card({person}) {
   return (
-    <div className="w-full bg-white pb-24 pt-8 sm:pt-16 sm:pb-32">
-      <div className="0 mx-auto max-w-7xl px-6 lg:px-8 ">
-        <ul
-          role="list"
-          className="grid grid-cols-2 items-center justify-center gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-3"
-        >
-          {people.map((person) => (
+        <div>
             <li key={person.id} className="mb-4">
               <div className="flex flex-col items-center overflow-hidden rounded-lg transition delay-100 ease-in-out">
                 <div className="group relative">
@@ -54,9 +47,6 @@ export default function Card() {
                 </div>
               </div>
             </li>
-          ))}
-        </ul>
-      </div>
-    </div>
+          </div>
   );
 }
