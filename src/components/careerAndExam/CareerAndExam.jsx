@@ -4,6 +4,11 @@ import Loading from "../Loading";
 import coverImg from "../../assets/upse.png";
 
 export default function CareerAndExam() {
+  const blackImage =
+    "https://img.freepik.com/free-photo/dark-black-abstract-background-with-wood-chips_24972-208.jpg?size=626&ext=jpg&ga=GA1.1.481347670.1709641640&semt=ais";
+  const whiteImage =
+    "https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?t=st=1709642531~exp=1709646131~hmac=844c3a047d6d4f1f7477d30a3511b4c9a3a832db0d11f3b0dca2c68f3ba7899c&w=900";
+
   const [load, setLoad] = useState(true);
   setTimeout(() => {
     setLoad(false);
@@ -13,15 +18,22 @@ export default function CareerAndExam() {
     <Loading />
   ) : (
     <section className="hero flex flex-col items-center justify-center">
-      <div className=" sm:sticky top-0 h-[22rem] w-full overflow-visible">
-        <img src={coverImg} alt="" className="h-96 w-full object-cover object-bottom" />
+      <div className=" top-0 h-[22rem] w-full overflow-visible sm:sticky">
+        <img
+          src={coverImg}
+          alt=""
+          className="h-96 w-full object-cover object-bottom"
+        />
       </div>
       {/*What is Civil Services?*/}
-      <div className="container z-10 flex flex-col items-center justify-center rounded-t-xl bg-white shadow-xl md:h-[550px] md:rounded-2xl lg:w-[1240px] xl:h-[400px]">
+      <div
+        className="container z-10 flex flex-col items-center justify-center rounded-t-xl bg-white shadow-xl md:h-[550px] md:rounded-2xl lg:w-[1240px] xl:h-[400px]"
+        style={{ backgroundImage: "url(" + whiteImage + ")" }}
+      >
         <h1 className=" pt-10 font-fredoka text-4xl font-bold lg:text-5xl">
           What is Civil Services?
         </h1>
-        <p className="mx-8 sm:mx-20 py-8 text-justify lg:text-lg ">
+        <p className="mx-8 py-8 text-justify sm:mx-20 lg:text-lg ">
           The civil services in India are the lifeblood of the nation's
           administration. These dedicated, non-elected officials form a vast
           network, stretching from the heart of the government in New Delhi to
@@ -39,11 +51,14 @@ export default function CareerAndExam() {
       </div>
       {/*Eligibility & Requirements*/}
       <div className="flex w-full flex-col items-center justify-center">
-        <div className="container z-10 flex flex-col items-center justify-center bg-zinc-800 text-white shadow-xl md:m-4 md:rounded-2xl  lg:w-[1240px]">
+        <div
+          className="container z-10 flex text-gray-200 flex-col items-center justify-center bg-cover shadow-xl md:m-4 md:rounded-2xl  lg:w-[1240px]"
+          style={{ backgroundImage: "url(" + blackImage + ")" }}
+        >
           <h1 className=" pt-20 font-fredoka text-4xl font-bold lg:text-5xl">
             Eligibility & Requirements
           </h1>
-          <p className="mx-8 sm:mx-20 py-8 pb-12 lg:text-lg">
+          <p className="mx-8 py-8 pb-12 sm:mx-20 lg:text-lg">
             Aspiring for a career in the prestigious Indian Civil Services comes
             with its set of eligibility criteria and requirements. Meeting these
             eligibility requirements is just the first step. To be successful,
@@ -114,11 +129,14 @@ export default function CareerAndExam() {
         </div>
       </div>
       {/*Exam Pattern & Syllabus*/}
-      <div className="container z-10 flex flex-col items-center justify-center bg-white shadow-xl md:m-4 md:rounded-2xl  lg:w-[1240px]">
+      <div
+        className="container z-10 flex flex-col items-center justify-center bg-white shadow-xl md:m-4 md:rounded-2xl  lg:w-[1240px]"
+        style={{ backgroundImage: "url(" + whiteImage + ")" }}
+      >
         <h1 className=" pt-20 font-fredoka text-4xl font-bold lg:text-5xl">
           Exam Pattern & Syllabus
         </h1>
-        <p className="mx-8 sm:mx-20 text-justify py-10 pt-8  lg:text-lg">
+        <p className="mx-8 py-10 pt-8 text-justify sm:mx-20  lg:text-lg">
           The Civil Services Examination (CSE) conducted by the UPSC is a
           multi-stage process, testing various competencies of aspiring civil
           servants. Here's a breakdown of both the exam pattern and syllabus:{" "}
@@ -176,12 +194,15 @@ export default function CareerAndExam() {
       </div>
 
       {/*exams page*/}
-      <div className="sm:mb-20 flex w-full flex-col items-center justify-center">
-        <div className="container pb-12 z-10 flex flex-col items-center justify-center bg-zinc-900 text-white shadow-xl md:m-4 md:rounded-2xl  lg:w-[1240px]">
+      <div className="flex w-full flex-col items-center justify-center sm:mb-20">
+        <div
+          className="container z-10 flex flex-col items-center justify-center pb-12 text-gray-200 shadow-xl md:m-4 md:rounded-2xl  lg:w-[1240px]"
+          style={{ backgroundImage: "url(" + blackImage + ")" }}
+        >
           <h1 className=" pt-20 font-fredoka text-4xl font-bold lg:text-5xl">
             Some Important links
           </h1>
-          <p className="mx-8 sm:mx-20  py-10 pt-8  lg:text-lg">
+          <p className="mx-8 py-10  pt-8 sm:mx-20  lg:text-lg">
             <ul className="grid gap-3">
               <li className="list-disc">
                 <a
