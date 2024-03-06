@@ -5,7 +5,7 @@ import Loading from "./Loading";
 import homePic from "../assets/homepage_pic.png";
 
 function Home() {
-  const bgImage ="https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  const bgImage ="https://images.unsplash.com/photo-1508615070457-7baeba4003ab?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     // "https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   const [data, setData] = useState([]);
 
@@ -102,12 +102,17 @@ function Home() {
       </div>
 
       <section
-        className="hero flex h-[750px] items-center justify-center overflow-hidden bg-white bg-cover"
+        className="hero flex h-[750px] items-center  justify-center overflow-hidden bg-white bg-cover"
         style={{ backgroundImage: "url(" + bgImage + ")" }}
       >
         <div className="container text-xl text-orange-700 ">
           <Carousel value={data} />
         </div>
+      </section>
+      
+      {/* Gallery */}
+      <section>
+
       </section>
     </div>
   );

@@ -52,7 +52,7 @@ export default function CareerAndExam() {
       {/*Eligibility & Requirements*/}
       <div className="flex w-full flex-col items-center justify-center">
         <div
-          className="container z-10 flex text-gray-200 flex-col items-center justify-center bg-cover shadow-xl md:m-4 md:rounded-2xl  lg:w-[1240px]"
+          className="container bg-black z-10 flex text-gray-200 flex-col items-center justify-center bg-cover shadow-xl md:m-4 md:rounded-2xl  lg:w-[1240px]"
           style={{ backgroundImage: "url(" + blackImage + ")" }}
         >
           <h1 className=" pt-20 font-fredoka text-4xl font-bold lg:text-5xl">
@@ -196,7 +196,7 @@ export default function CareerAndExam() {
       {/*exams page*/}
       <div className="flex w-full flex-col items-center justify-center sm:mb-20">
         <div
-          className="container z-10 flex bg-cover flex-col items-center justify-center pb-12 text-gray-200 shadow-xl md:m-4 md:rounded-2xl  lg:w-[1240px]"
+          className="container bg-black z-10 flex bg-cover flex-col items-center justify-center pb-12 text-gray-200 shadow-xl md:m-4 md:rounded-2xl  lg:w-[1240px]"
           style={{ backgroundImage: "url(" + blackImage + ")" }}
         >
           <h1 className=" pt-20 font-fredoka text-4xl font-bold lg:text-5xl">
