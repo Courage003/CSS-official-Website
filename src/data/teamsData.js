@@ -82,7 +82,7 @@ export const core = [
       "https://res.cloudinary.com/dm1tnakkg/image/upload/c_crop,ar_1:1/v1708471919/members/Sujal_Patel_c3fenl.jpg",
     imageAlt: "sujal",
     role: "Member",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/sujalpatel52",
     twitterUrl: "",
   },
   {
@@ -155,7 +155,7 @@ export const management = [
       "https://res.cloudinary.com/dm1tnakkg/image/upload/c_crop,ar_1:1/v1708471919/members/Sujal_Patel_c3fenl.jpg",
     imageAlt: "sujal",
     role: "Member",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/sujalpatel52",
     twitterUrl: "",
   },
   {
@@ -211,7 +211,7 @@ export const research = [
       "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,e_improve/v1708471922/members/Varun_Srivastava_zrfxol.jpg",
     imageAlt: "Varun",
     role: "Head",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/varun-srivastava-nita",
     twitterUrl: "",
   },
   {
