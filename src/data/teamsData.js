@@ -59,8 +59,8 @@ export const tech = [
       "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471914/members/Neha_Das_Biswas_c9xzph.jpg",
     imageAlt: "Neha",
     role: "Member",
-    // linkedinUrl:,
-    // twitterUrl:
+    linkedinUrl: "",
+    twitterUrl: ""
   },
 ];
 
@@ -284,8 +284,8 @@ export const social = [
       "https://res.cloudinary.com/dm1tnakkg/image/upload/v1708471919/members/swati_Kumari_ifudgp.jpg",
     imageAlt: "Swati",
     role: "Member",
-    linkedinUrl: "",
-    twitterUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/swati-kumari-355173236",
+    twitterUrl: "https://x.com/swatiku3709127",
   },
   {
     id: 703,
@@ -304,7 +304,7 @@ export const social = [
       "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471914/members/Neha_Das_Biswas_c9xzph.jpg",
     imageAlt: "Neha",
     role: "Member",
-    // linkedinUrl:,
-    // twitterUrl:
+    linkedinUrl:"",
+    twitterUrl:""
   },
 ];
