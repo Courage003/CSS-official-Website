@@ -67,26 +67,26 @@ function Home() {
         <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-br from-black via-transparent to-transparent opacity-80"></div>
         <div className="absolute bottom-0 right-0 h-full w-full bg-gradient-to-bl from-black via-transparent to-transparent opacity-80"></div>
 
-        <motion.div
+        <motion.div initial={{opacity:0,y:60}} animate={{opacity:1,y:0}} transition={{ duration: 0.7 }}
         className="hero-overlay z-20 m-4 bg-opacity-60 text-center text-2xl font-medium tracking-wide ">
           A NITA Club
         </motion.div>
         <div className="hero-content text-neutral-content z-20 text-center">
           <div className="mx-auto my-auto max-w-lg ">
-            <h1 className="mb-5 text-5xl font-bold">Civil Services Society</h1>
-            <p className="mb-5 px-4">
+            <motion.h1 initial={{opacity:0,y:60}} animate={{opacity:1,y:0}} transition={{ duration: 0.7 }} className="mb-5 text-5xl font-bold">Civil Services Society</motion.h1>
+            <motion.p initial={{opacity:0,y:60}} animate={{opacity:1,y:0}} transition={{ duration: 0.7,delay:0.5 }} className="mb-5 px-4">
               Ready to embark on your journey to becoming a future leader? Take
               the first step and join the CSS today!
-            </p>
+            </motion.p>
           </div>
         </div>
       </div>
-      <div
-        className="flex w-full flex-col items-center justify-center px-8 py-16 text-center text-white sm:p-24"
+
+      <div className="flex w-full flex-col items-center justify-center px-8 py-16 text-center text-white sm:p-24"
         style={{ background: "#000" }}
       >
-        <h4 className="text-3xl font-bold sm:text-5xl">#OurMotto</h4>
-        <p className="container pt-3 text-justify font-inter text-sm sm:pt-6 sm:text-lg sm:leading-7 lg:w-3/4">
+        <motion.h4 initial={{opacity:0, y:"-50%"}} whileInView={{opacity:1,y:0}} transition={{duration:0.8}} viewport={{once:true}} className="text-3xl font-bold sm:text-5xl">#OurMotto</motion.h4>
+        <motion.p initial={{opacity:0, y:"50%"}} whileInView={{opacity:1,y:0}} transition={{duration:0.8}} viewport={{once:true}} className="container pt-3 text-justify font-inter text-sm sm:pt-6 sm:text-lg sm:leading-7 lg:w-3/4">
           The CSS Club is dedicated to supporting civil service aspirants by
           offering a platform for engaging discussions and seeking advice on
           various subjects related to civil examinations. Our mission includes
@@ -102,7 +102,7 @@ function Home() {
           the heart of the CSS Club's theme is the commitment to unveil the
           potential of hidden aspirants, providing them with opportunities to
           contribute meaningfully to the nation's progress.
-        </p>
+        </motion.p>
       </div>
 
       <section

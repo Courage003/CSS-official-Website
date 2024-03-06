@@ -1,8 +1,10 @@
 import React from "react";
+import {motion} from "framer-motion";
 
 export default function Card({person}) {
   return (
-        <div>
+        <motion.div initial={{opacity:0,y:-30}}
+        whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{duration:0.9,delay:0.2}}>
             <li key={person.id} className="mb-4">
               <div className="flex flex-col items-center overflow-hidden rounded-lg transition delay-100 ease-in-out">
                 <div className="group relative">
@@ -47,6 +49,6 @@ export default function Card({person}) {
                 </div>
               </div>
             </li>
-          </div>
+          </motion.div>
   );
 }

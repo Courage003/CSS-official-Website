@@ -83,7 +83,7 @@ function Header() {
                   </NavLink>
                 </motion.li>
 
-               <motion.li whileHover={{scale:1.1}}
+                <motion.li whileHover={{scale:1.1}}
               transition={{type:"spring",stiffness:500}}>
                   <NavLink
                     to="/resources"
