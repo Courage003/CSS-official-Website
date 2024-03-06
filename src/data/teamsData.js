@@ -26,8 +26,8 @@ export const people = [
       "https://res.cloudinary.com/dm1tnakkg/image/upload/v1708471910/members/Dhruv_Rohatgi_DR_wqxug0.jpg",
     imageAlt: "dhruv",
     role: "Head of Operations",
-    // linkedinUrl:,
-    // twitterUrl:
+    linkedinUrl: "https://www.linkedin.com/in/dhruvrohatgi28/",
+    twitterUrl: "https://twitter.com/Courage18203",
   },
 ];
 
@@ -125,8 +125,8 @@ export const management = [
       "https://res.cloudinary.com/dm1tnakkg/image/upload/v1708471910/members/Dhruv_Rohatgi_DR_wqxug0.jpg",
     imageAlt: "dhruv",
     role: "Lead",
-    // linkedinUrl:,
-    // twitterUrl:
+    linkedinUrl: "https://www.linkedin.com/in/dhruvrohatgi28/",
+    twitterUrl: "https://twitter.com/Courage18203",
   },
   {
     id: 402,
