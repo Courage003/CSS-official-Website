@@ -2,9 +2,19 @@ import React, { useState } from "react";
 import grp from "../../assets/grpPhoto.jpg";
 import Card from "./Card";
 import Loading from "../Loading";
-import { people,core,tech,management,graphic,research,social} from "../../data/teamsData";
+import {
+  people,
+  core,
+  tech,
+  management,
+  graphic,
+  research,
+  social,
+} from "../../data/teamsData";
 
 export default function About() {
+  const bgImage =
+    "https://images.pexels.com/photos/7130490/pexels-photo-7130490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   const [load, setLoad] = useState(true);
   setTimeout(() => {
     setLoad(false);
@@ -15,14 +25,17 @@ export default function About() {
   ) : (
     <section className=" hero mx-auto ">
       <div
-        className="mb-12 w-full p-24 text-center text-white"
+        className=" w-full p-24 text-center text-white"
         style={{ background: "#000" }}
       >
         <h4 className="text-3xl font-bold sm:text-5xl">#KnowUs</h4>
         <p>EMPOWER. INSPIRE. TRANSFORM.</p>
       </div>
-      <div className="">
-        <div className="mb-20 flex flex-col items-center justify-center lg:flex-row">
+      <div
+        className="mb-12 bg-cover pb-2 pt-12"
+        style={{ backgroundImage: "url(" + bgImage + ")" }}
+      >
+        <div className="mb-10 flex flex-col items-center justify-center lg:flex-row">
           <div className="m-10 rounded-lg lg:ml-8 lg:mr-4 lg:w-1/2">
             <img
               src={grp}
@@ -31,7 +44,7 @@ export default function About() {
               style={{ borderRadius: "12px" }}
             />
           </div>
-          <div className="ml-1 flex flex-col items-center justify-center lg:w-1/2">
+          <div className="ml-1 flex flex-col items-center justify-center bg-cover lg:w-1/2">
             <h4 className="text-center text-4xl font-bold">Who We Are ?</h4>
             <p className="tracking-lg w-fit px-7 pt-4 text-justify leading-6 sm:px-16 sm:text-lg lg:px-12 lg:pr-16 ">
               Civil Service Society, NIT Agartala serves as a dynamic platform
@@ -55,8 +68,10 @@ export default function About() {
           Our Teams
         </h1>
         <div className="w-full bg-white pb-24 pt-8 sm:pb-32 sm:pt-16">
-          <div className="0 mx-auto max-w-7xl px-6 lg:px-8 pb-20">
-            <h2 className="text-center text-3xl mb-8 font-semibold">Executive Team</h2>
+          <div className="0 mx-auto max-w-7xl px-6 pb-20 lg:px-8">
+            <h2 className="mb-8 text-center text-3xl font-semibold">
+              Executive Team
+            </h2>
             <ul
               role="list"
               className="grid grid-cols-2 items-center justify-center gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-3"
@@ -66,8 +81,10 @@ export default function About() {
               ))}
             </ul>
           </div>
-          <div className="0 mx-auto max-w-7xl px-6 lg:px-8 pb-20">
-            <h2 className="text-center text-3xl mb-8 font-semibold">Technical Team</h2>
+          <div className="0 mx-auto max-w-7xl px-6 pb-20 lg:px-8">
+            <h2 className="mb-8 text-center text-3xl font-semibold">
+              Technical Team
+            </h2>
             <ul
               role="list"
               className="grid grid-cols-2 items-center justify-center gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-3"
@@ -77,8 +94,10 @@ export default function About() {
               ))}
             </ul>
           </div>
-          <div className="0 mx-auto max-w-7xl px-6 lg:px-8 pb-20">
-            <h2 className="text-center text-3xl mb-8 font-semibold">Core Team</h2>
+          <div className="0 mx-auto max-w-7xl px-6 pb-20 lg:px-8">
+            <h2 className="mb-8 text-center text-3xl font-semibold">
+              Core Team
+            </h2>
             <ul
               role="list"
               className="grid grid-cols-2 items-center justify-center gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-3"
@@ -88,8 +107,10 @@ export default function About() {
               ))}
             </ul>
           </div>
-          <div className="0 mx-auto max-w-7xl px-6 lg:px-8 pb-20">
-            <h2 className="text-center text-3xl mb-8 font-semibold">Event Management Team</h2>
+          <div className="0 mx-auto max-w-7xl px-6 pb-20 lg:px-8">
+            <h2 className="mb-8 text-center text-3xl font-semibold">
+              Event Management Team
+            </h2>
             <ul
               role="list"
               className="grid grid-cols-2 items-center justify-center gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-3"
@@ -99,8 +120,10 @@ export default function About() {
               ))}
             </ul>
           </div>
-          <div className="0 mx-auto max-w-7xl px-6 lg:px-8 pb-20">
-            <h2 className="text-center text-3xl mb-8 font-semibold">Graphic Design Team</h2>
+          <div className="0 mx-auto max-w-7xl px-6 pb-20 lg:px-8">
+            <h2 className="mb-8 text-center text-3xl font-semibold">
+              Graphic Design Team
+            </h2>
             <ul
               role="list"
               className="grid grid-cols-2 items-center justify-center gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-3"
@@ -110,8 +133,10 @@ export default function About() {
               ))}
             </ul>
           </div>
-          <div className="0 mx-auto max-w-7xl px-6 lg:px-8 pb-20">
-            <h2 className="text-center text-3xl mb-8 font-semibold">Research & Development Team</h2>
+          <div className="0 mx-auto max-w-7xl px-6 pb-20 lg:px-8">
+            <h2 className="mb-8 text-center text-3xl font-semibold">
+              Research & Development Team
+            </h2>
             <ul
               role="list"
               className="grid grid-cols-2 items-center justify-center gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-3"
@@ -121,8 +146,10 @@ export default function About() {
               ))}
             </ul>
           </div>
-          <div className="0 mx-auto max-w-7xl px-6 lg:px-8 pb-20">
-            <h2 className="text-center text-3xl mb-8 font-semibold">Social Media and PR</h2>
+          <div className="0 mx-auto max-w-7xl px-6 pb-20 lg:px-8">
+            <h2 className="mb-8 text-center text-3xl font-semibold">
+              Social Media and PR
+            </h2>
             <ul
               role="list"
               className="grid grid-cols-2 items-center justify-center gap-x-8 gap-y-12 sm:gap-y-16 md:grid-cols-3"
