@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function LinkCard({ data }) {
     const value = {
@@ -16,7 +17,8 @@ function LinkCard({ data }) {
     }
 
   return (
-    <div className={`${colors[data.category]} shadow-lg rounded-lg overflow-hidden max-w-sm mx-auto hover:scale-105 transform duration-300 ease-out`} key={data.id}>
+    <motion.div initial={{ opacity: 0,y: -25 }} animate={{opacity: 1,y:0}}
+    transition={{ duration: 0.5 }} className={`${colors[data.category]} shadow-lg rounded-lg overflow-hidden max-w-sm mx-auto hover:scale-105 transform duration-300 ease-out`} key={data.id}>
     <div className="px-6 pt-6">
       <div className="border-l-4 pl-2 font-semibold border-yellow-500 font-roboto text-zinc-500 uppercase">
         {data.type}
@@ -28,11 +30,11 @@ function LinkCard({ data }) {
     </div>
     <div className="px-6 pt-4 pb-4 flex items-center justify-start text-gray-600  bottom-0">
       <i className="fa fa-arrow-right" aria-hidden="true"></i>
-      <a className="inline-block pl-2 font-semibold rounded cursor-pointer" href={data.link} target="_blank">
+      <a className="inline-block pl-2 font-semibold rounded cursor-pointer sticky" href={data.link} target="_blank">
         {value[data.type]}
       </a>
     </div>
-  </div>
+  </motion.div>
   
 
   );

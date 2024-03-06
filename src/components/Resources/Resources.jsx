@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Loading from "../Loading";
 import LinkCard from "../UI/LinkCard";
 import { links, category } from "../../data/resourceData";
+import {motion} from "framer-motion";
 
 function Resources() {
   const [load, setLoad] = useState(true);
@@ -29,12 +30,14 @@ function Resources() {
         <div className="w-full items-center p-8">
           <div className="flex items-center justify-start pb-2 gap-3 overflow-auto">
             {category.map((cat) => (
-              <button
+              <motion.button
+              whileHover={{scale:1.1}}
+              transition={{type:"spring",stiffness:500}}
                 className={`rounded bg-gray-100 px-4 py-1 hover:bg-gray-300 ${currCategory == cat ? "bg-gray-300" : ""} `}
                 onClick={() => setCurrCategory(cat)}                                       
               >
                 {cat}
-              </button>
+              </motion.button>
             ))}
           </div>
         </div>
