@@ -6,7 +6,7 @@ export default function Gallery() {
   const link =
     "https://res.cloudinary.com/dm1tnakkg/image/upload/v1708713681/gallery/";
   return (
-    <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3, 1200: 4 }}>
+    <ResponsiveMasonry columnsCountBreakPoints={{350: 2, 750: 3, 900: 3, 1200: 4 }}>
       <Masonry gutter="10px">
         {images.map((image, i) => (
           <img

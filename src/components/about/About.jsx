@@ -12,6 +12,8 @@ import {
   social,
 } from "../../data/teamsData";
 
+import {motion} from "framer-motion"
+
 export default function About() {
   const bgImage =
     "https://images.pexels.com/photos/7130490/pexels-photo-7130490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
@@ -46,7 +48,7 @@ export default function About() {
           </div>
           <div className="ml-1 flex flex-col items-center justify-center bg-cover lg:w-1/2">
             <h4 className="text-center text-4xl font-bold">Who We Are ?</h4>
-            <p className="tracking-lg w-fit px-7 pt-4 text-justify leading-6 sm:px-16 sm:text-lg lg:px-12 lg:pr-16 ">
+            <motion.p initial={{opacity : 0,x : -40}} animate={{opacity:1,x:0}} transition={{type: "spring", stiffness: 100,delay:0.2}} exit={{opacity:0,x:-40}} className="tracking-lg w-fit px-7 pt-4 text-justify leading-6 sm:px-16 sm:text-lg lg:px-12 lg:pr-16 ">
               Civil Service Society, NIT Agartala serves as a dynamic platform
               for impassioned students to rigorously examine, deliberate upon,
               and actively engage with current public Policy and governance
@@ -58,7 +60,7 @@ export default function About() {
               concerted action, we endeavor to cultivate future leaders
               dedicated to shaping a more informed, effective, and equitable
               governance landscape.
-            </p>
+            </motion.p>
           </div>
         </div>
       </div>
@@ -67,7 +69,7 @@ export default function About() {
         <h1 className="font-inter text-3xl font-semibold underline sm:text-5xl">
           Our Teams
         </h1>
-        <div className="w-full bg-white pb-24 pt-8 sm:pb-32 sm:pt-16">
+        <div className="w-2/3 bg-white pb-24 pt-8 sm:pb-32 sm:pt-16">
           <div className="0 mx-auto max-w-7xl px-6 pb-20 lg:px-8">
             <h2 className="mb-8 text-center text-3xl font-semibold">
               Executive Team
