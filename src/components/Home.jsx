@@ -3,39 +3,41 @@ import backVideo from "../assets/home_page__video.mp4";
 import Carousel from "./UI/Carousel";
 import Loading from "./Loading";
 import homePic from "../assets/homepage_pic.png";
+import Gallery from "./UI/Gallery";
 
 function Home() {
-  const bgImage ="https://images.unsplash.com/photo-1508615070457-7baeba4003ab?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    // "https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+  const bgImage =
+    "https://images.unsplash.com/photo-1508615070457-7baeba4003ab?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  // "https://images.pexels.com/photos/316466/pexels-photo-316466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
   const [data, setData] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const url =
-        "https://current-affairs-api.p.rapidapi.com/current-affairs?country=in";
-      const options = {
-        method: "GET",
-        headers: {
-          "X-RapidAPI-Key":
-            "7e56c256e2mshe9cf5df927f18aap15112ejsn58f3616cca84",
-          "X-RapidAPI-Host": "current-affairs-api.p.rapidapi.com",
-        },
-      };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const url =
+  //       "https://current-affairs-api.p.rapidapi.com/current-affairs?country=in";
+  //     const options = {
+  //       method: "GET",
+  //       headers: {
+  //         "X-RapidAPI-Key":
+  //           "7e56c256e2mshe9cf5df927f18aap15112ejsn58f3616cca84",
+  //         "X-RapidAPI-Host": "current-affairs-api.p.rapidapi.com",
+  //       },
+  //     };
 
-      try {
-        const response = await fetch(url, options);
-        const result = await response.json();
-        const filteredValue = result.current_affairs.filter((item) => {
-          return item.author && item.urlToImage;
-        });
-        console.log(filteredValue);
-        setData(filteredValue);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    fetchData();
-  }, []);
+  //     try {
+  //       const response = await fetch(url, options);
+  //       const result = await response.json();
+  //       const filteredValue = result.current_affairs.filter((item) => {
+  //         return item.author && item.urlToImage;
+  //       });
+  //       console.log(filteredValue);
+  //       setData(filteredValue);
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
 
   const [load, setLoad] = useState(true);
   setTimeout(() => {
@@ -47,8 +49,8 @@ function Home() {
   ) : (
     <div className="hero min-h-screen">
       <div
-        className="relative flex h-screen  bg-auto bg-center
-        flex-col items-center justify-center overflow-hidden font-inter text-white"
+        className="relative flex h-screen  flex-col items-center
+        justify-center overflow-hidden bg-auto bg-center font-inter text-white"
         style={{ backgroundImage: "url(" + homePic + ")" }}
       >
         <video
@@ -109,10 +111,13 @@ function Home() {
           <Carousel value={data} />
         </div>
       </section>
-      
-      {/* Gallery */}
-      <section>
 
+      {/* Gallery */}
+      <section className="flex gap-8 py-10 flex-col items-center justify-center">
+        <div className="text-3xl font-inter font-bold sm:text-5xl">Gallery</div>
+        <div className="container lg:px-20">
+          <Gallery />
+        </div>
       </section>
     </div>
   );
