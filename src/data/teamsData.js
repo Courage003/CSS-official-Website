@@ -46,11 +46,11 @@ export const tech = [
     id: 203,
     name: "Lalit Kumar Jangir",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/v1708473082/members/pic_u5baug.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1709805127/members/LALIT_JANGIR_u1scnl.jpg",
     imageAlt: "Lalit",
     role: "Member",
-    // linkedinUrl:,
-    // twitterUrl:
+    linkedinUrl: "https://www.linkedin.com/in/lalit-kumar-jangir-281157230",
+    twitterUrl: "https://x.com/lalitjangir33"
   },
   {
     id: 202,
@@ -115,7 +115,7 @@ export const core = [
     linkedinUrl: "https://linkedin.com/in/adyatrayee-roy-13b963272",
     twitterUrl: "",
   },
-]; //done
+];
 
 export const management = [
   {
@@ -198,7 +198,7 @@ export const graphic = [
       "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471909/members/Akanksha_Mishra_z8o5st.jpg",
     imageAlt: "Akanksha",
     role: "Member",
-    linkedinUrl: "",
+    linkedinUrl: "https://www.linkedin.com/in/akanksha-mishra-6451a6258",
     twitterUrl: "",
   },
 ];
