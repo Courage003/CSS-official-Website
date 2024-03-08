@@ -13,7 +13,7 @@ export const people = [
     id: 101,
     name: "Satwik Gupta",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471916/members/Satwik_Gupta_gop6uv.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/e_improve/v1709888550/members/Satwik_gupta_budyqf.jpg",
     imageAlt: "satwik",
     role: "General Secretary",
     linkedinUrl: "https://www.linkedin.com/in/satwikgupta18",
@@ -33,24 +33,24 @@ export const people = [
 
 export const tech = [
   {
-    id: 200,
-    name: "Satwik Gupta",
-    imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471916/members/Satwik_Gupta_gop6uv.jpg",
-    imageAlt: "satwik",
-    role: "Lead",
-    linkedinUrl: "https://www.linkedin.com/in/satwikgupta18",
-    twitterUrl: "https://twitter.com/SatwikGupta1801",
-  },
-  {
     id: 203,
     name: "Lalit Kumar Jangir",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1709805127/members/LALIT_JANGIR_u1scnl.jpg",
+    "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1709805127/members/LALIT_JANGIR_u1scnl.jpg",
     imageAlt: "Lalit",
-    role: "Member",
+    role: "Lead",
     linkedinUrl: "https://www.linkedin.com/in/lalit-kumar-jangir-281157230",
     twitterUrl: "https://x.com/lalitjangir33"
+  },
+  {
+    id: 200,
+    name: "Satwik Gupta",
+    imageUrl:
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/e_improve/v1709888550/members/Satwik_gupta_budyqf.jpg",
+    imageAlt: "satwik",
+    role: "Member",
+    linkedinUrl: "https://www.linkedin.com/in/satwikgupta18",
+    twitterUrl: "https://twitter.com/SatwikGupta1801",
   },
   {
     id: 202,
