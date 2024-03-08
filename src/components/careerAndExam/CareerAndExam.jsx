@@ -22,7 +22,7 @@ export default function CareerAndExam() {
         <img
           src={coverImg}
           alt=""
-          className="h-60 sm:h-96 w-full object-cover object-bottom"
+          className="h-60 sm:h-96 w-full object-fill sm:object-cover object-bottom"
         />
       </div>
       {/*What is Civil Services?*/}
