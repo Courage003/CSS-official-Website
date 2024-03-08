@@ -31,6 +31,7 @@ export default function Card({ person }) {
               <div className="flex items-center space-x-4">
                 <a
                   href={person.linkedinUrl}
+                  title="LinkedIn"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-blue-500"
@@ -48,6 +49,7 @@ export default function Card({ person }) {
                 </a>
                 <a
                   href={person.twitterUrl}
+                  title="Twitter"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white hover:text-slate-400"
