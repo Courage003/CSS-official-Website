@@ -8,11 +8,12 @@ function LinkCard({ data }) {
         "video" : "Watch now",
     }
     const colors = {
-      "Economics":"bg-amber-100",
+      "Economics":"bg-amber-200",
+      "Polity":"bg-pink-200",
       "History":"bg-blue-100",
       "Geography":"bg-green-100",
-      "IR":"bg-red-100",
-      "PYQ's":"bg-purple-100",
+      "IR":"bg-red-200",
+      "PYQ's":"bg-purple-200",
       "Miscellaneous":"bg-orange-100",
     }
 
