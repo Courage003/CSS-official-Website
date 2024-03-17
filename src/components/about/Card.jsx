@@ -22,7 +22,7 @@ export default function Card({ person }) {
         <div className="flex flex-col items-center overflow-hidden rounded-lg transition delay-100 ease-in-out">
           <div className="group relative">
             <img
-              className="h-48 w-44 transform overflow-hidden rounded-xl border border-gray-400 object-cover object-top transition duration-300 ease-in-out hover:scale-105 sm:h-64 sm:w-60"
+              className="h-48 w-44 transform overflow-hidden rounded-xl border border-gray-400 bg-zinc-300 object-cover object-top transition duration-300 ease-in-out hover:scale-105 sm:h-64 sm:w-60"
               src={person.imageUrl}
               alt={person.name}
               loading="lazy"

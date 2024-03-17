@@ -3,7 +3,7 @@ export const people = [
     id: 100,
     name: "Rakesh Ranjan",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471914/members/Rakesh_Ranjan_uamlvt.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto,q_auto/v1708471914/members/Rakesh_Ranjan_uamlvt.jpg",
     imageAlt: "rakesh",
     role: "President",
     linkedinUrl: "https://www.linkedin.com/in/rakesh-ranjan-7b1902228",
@@ -13,7 +13,7 @@ export const people = [
     id: 101,
     name: "Satwik Gupta",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/e_improve/v1709888550/members/Satwik_gupta_budyqf.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/e_improve,q_auto/v1709888550/members/Satwik_gupta_budyqf.jpg",
     imageAlt: "satwik",
     role: "General Secretary",
     linkedinUrl: "https://www.linkedin.com/in/satwikgupta18",
@@ -36,7 +36,7 @@ export const tech = [
     id: 203,
     name: "Lalit Kumar Jangir",
     imageUrl:
-    "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1709805127/members/LALIT_JANGIR_u1scnl.jpg",
+    "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto,q_auto/v1709805127/members/LALIT_JANGIR_u1scnl.jpg",
     imageAlt: "Lalit",
     role: "Lead",
     linkedinUrl: "https://www.linkedin.com/in/lalit-kumar-jangir-281157230",
@@ -46,7 +46,7 @@ export const tech = [
     id: 200,
     name: "Satwik Gupta",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/e_improve/v1709888550/members/Satwik_gupta_budyqf.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/e_improve,q_auto/v1709888550/members/Satwik_gupta_budyqf.jpg",
     imageAlt: "satwik",
     role: "Member",
     linkedinUrl: "https://www.linkedin.com/in/satwikgupta18",
@@ -69,7 +69,7 @@ export const core = [
     id: 301,
     name: "Rakesh Ranjan",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471914/members/Rakesh_Ranjan_uamlvt.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto,q_auto/v1708471914/members/Rakesh_Ranjan_uamlvt.jpg",
     imageAlt: "rakesh",
     role: "Lead",
     linkedinUrl: "https://www.linkedin.com/in/rakesh-ranjan-7b1902228",
@@ -79,7 +79,7 @@ export const core = [
     id: 302,
     name: "Sujal Patel",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_crop,ar_1:1/v1708471919/members/Sujal_Patel_c3fenl.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_crop,ar_1:1,q_auto/v1708471919/members/Sujal_Patel_c3fenl.jpg",
     imageAlt: "sujal",
     role: "Member",
     linkedinUrl: "https://www.linkedin.com/in/sujalpatel52",
@@ -99,7 +99,7 @@ export const core = [
     id: 302,
     name: "Divyam Singh",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471913/members/Divyam_Raj_Singh_rzoy5t.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto,q_auto/v1708471913/members/Divyam_Raj_Singh_rzoy5t.jpg",
     imageAlt: "divyam",
     role: "Member",
     linkedinUrl: "",
@@ -109,7 +109,7 @@ export const core = [
     id: 305,
     name: "Adyatrayee Roy",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471908/members/Adyatrayee_Roy_kqnopi.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto,q_auto/v1708471908/members/Adyatrayee_Roy_kqnopi.jpg",
     imageAlt: "Adyatrayee",
     role: "Member",
     linkedinUrl: "https://linkedin.com/in/adyatrayee-roy-13b963272",
@@ -132,7 +132,7 @@ export const management = [
     id: 402,
     name: "Bishuddhananda Adhikari",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_pad,ar_1:1/v1708471910/members/Bishuddhananda_Adhikari_v2ogaq.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_pad,ar_1:1,q_auto/v1708471910/members/Bishuddhananda_Adhikari_v2ogaq.jpg",
     imageAlt: "Bishuddhananda",
     role: "Member",
     linkedinUrl: "https://www.linkedin.com/in/bishuddhanandaadhikari4902",
@@ -142,7 +142,7 @@ export const management = [
     id: 404,
     name: "Ankita Debnath",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471910/members/Ankita_Debnath_22UEI039_yzssmj.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto,q_auto/v1708471910/members/Ankita_Debnath_22UEI039_yzssmj.jpg",
     imageAlt: "sujal",
     role: "Member",
     linkedinUrl: "https://www.linkedin.com/in/ankita-debnath-b74490266",
@@ -152,7 +152,7 @@ export const management = [
     id: 401,
     name: "Sujal Patel",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_crop,ar_1:1/v1708471919/members/Sujal_Patel_c3fenl.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_crop,ar_1:1,q_auto/v1708471919/members/Sujal_Patel_c3fenl.jpg",
     imageAlt: "sujal",
     role: "Member",
     linkedinUrl: "https://www.linkedin.com/in/sujalpatel52",
@@ -162,7 +162,7 @@ export const management = [
     id: 403,
     name: "Sucheta Majumdar ",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1/v1708471917/members/Sucheta_Majumdar_s9vjvc.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,q_auto/v1708471917/members/Sucheta_Majumdar_s9vjvc.jpg",
     imageAlt: "Sucheta",
     role: "Member",
     linkedinUrl: "https://www.linkedin.com/in/sucheta-majumdar-8aa4a4295",
@@ -185,7 +185,7 @@ export const graphic = [
     id: 502,
     name: "Siddharth Kumar",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708705802/members/siddharth_kumar_v40zqb.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto,q_auto/v1708705802/members/siddharth_kumar_v40zqb.jpg",
     imageAlt: "Siddharth",
     role: "Member",
     linkedinUrl: "https://www.linkedin.com/in/siddharth-kumar-8bbb26263",
@@ -195,7 +195,7 @@ export const graphic = [
     id: 503,
     name: "Akanksha Mishra",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471909/members/Akanksha_Mishra_z8o5st.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto,q_auto/v1708471909/members/Akanksha_Mishra_z8o5st.jpg",
     imageAlt: "Akanksha",
     role: "Member",
     linkedinUrl: "https://www.linkedin.com/in/akanksha-mishra-6451a6258",
@@ -208,7 +208,7 @@ export const research = [
     id: 602,
     name: "Varun Srivastava",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,e_improve/v1708471922/members/Varun_Srivastava_zrfxol.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,e_improve,q_auto/v1708471922/members/Varun_Srivastava_zrfxol.jpg",
     imageAlt: "Varun",
     role: "Head",
     linkedinUrl: "https://www.linkedin.com/in/varun-srivastava-nita",
@@ -218,7 +218,7 @@ export const research = [
     id: 601,
     name: "Akanksha Mishra",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471909/members/Akanksha_Mishra_z8o5st.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto,q_auto/v1708471909/members/Akanksha_Mishra_z8o5st.jpg",
     imageAlt: "Akanksha",
     role: "Member",
     linkedinUrl: "",
@@ -228,7 +228,7 @@ export const research = [
     id: 603,
     name: "Bishuddhananda Adhikari",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_pad,ar_1:1/v1708471910/members/Bishuddhananda_Adhikari_v2ogaq.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_pad,ar_1:1,q_auto/v1708471910/members/Bishuddhananda_Adhikari_v2ogaq.jpg",
     imageAlt: "Bishuddhananda",
     role: "Member",
     linkedinUrl: "https://www.linkedin.com/in/bishuddhanandaadhikari4902",
@@ -238,7 +238,7 @@ export const research = [
     id: 604,
     name: "Tetala Hema Lakshmi Prasanna",
     imageUrl:
-      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto/v1708471914/members/Hema_Lakshmi_Prasanna_xxhr7j.jpg",
+      "https://res.cloudinary.com/dm1tnakkg/image/upload/c_fill,ar_1:1,g_auto,q_auto/v1708471914/members/Hema_Lakshmi_Prasanna_xxhr7j.jpg",
     imageAlt: "Hema",
     role: "Member",
     linkedinUrl: "https://www.linkedin.com/in/hema-lakshmi-prasanna-22114b25b",
