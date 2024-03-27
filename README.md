@@ -1,6 +1,6 @@
 # React + Vite
 
-Hosted link: https://main--brilliant-haupia-bce932.netlify.app/
+Hosted link: https://css-nita.netlify.app/
 
 
 
