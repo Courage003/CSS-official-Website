@@ -71,7 +71,7 @@ const Footer = () => {
             >
               <input
                 type="email"
-                className="sm:h-10 h-8 w-36 sm:w-56 rounded-l-md border border-gray-300 px-4 focus:border-blue-300 focus:outline-none focus:ring"
+                className="sm:h-10 h-8 w-36 sm:w-56 rounded-l-md border text-black border-gray-300 px-4 focus:border-blue-300 focus:outline-none focus:ring"
                 placeholder="Type Email"
               />
               <button className="flex h-8 sm:h-10 w-8 sm:w-12 items-center justify-center rounded-r-md bg-orange-500 text-white">

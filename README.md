@@ -1,6 +1,9 @@
-# React + Vite
+# Civil Services Society
 
-Hosted link: https://main--brilliant-haupia-bce932.netlify.app/
+Website: https://css-nita.netlify.app/
+
+This is an official website for Civil Services Society, NIT-A.
+
 
 
 

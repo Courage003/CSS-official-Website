@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Sidemenu from "./Sidemenu";
 import logo from "../../assets/logo.jpg";
 import { Link, NavLink } from "react-router-dom";
+import {motion} from "framer-motion";
 
 function Header() {
   const [open, setOpen] = useState(false);
@@ -47,10 +48,11 @@ function Header() {
             </Link>
           </div>
 
-         <div className="font-inter md:flex md:items-center md:gap-12">
+        <div className="font-inter md:flex md:items-center md:gap-12">
             <nav aria-label="Global" className="hidden md:block">
               <ul className="flex items-center gap-6 text-sm lg:text-lg">
-                <li>
+                <motion.li whileHover={{scale:1.1}}
+              transition={{type:"spring",stiffness:500}}>
                   <NavLink
                     to="/"
                     className={({isActive}) => `transition hover:text-amber-700 ${isActive ? "text-amber-900" : "text-zinc-800"}`}
@@ -58,8 +60,9 @@ function Header() {
                     {" "}
                     Home{" "}
                   </NavLink>
-                </li>
-              <li>
+                </motion.li>
+              <motion.li whileHover={{scale:1.1}}
+              transition={{type:"spring",stiffness:500}}>
                   <NavLink
                     to="/about"
                     className={({isActive}) => ` transition hover:text-amber-700 ${isActive ? "text-amber-900" : "text-zinc-800"}`}
@@ -67,9 +70,10 @@ function Header() {
                     {" "}
                     About Us{" "}
                   </NavLink>
-                </li>
+                </motion.li>
 
-               <li>
+               <motion.li whileHover={{scale:1.1}}
+              transition={{type:"spring",stiffness:500}}>
                   <NavLink
                     to="/career"
                     className={({isActive}) => ` transition hover:text-amber-700 ${isActive ? "text-amber-900" : "text-zinc-800"}`}
@@ -77,9 +81,10 @@ function Header() {
                     {" "}
                     Career and Exams{" "}
                   </NavLink>
-                </li>
+                </motion.li>
 
-               <li>
+                <motion.li whileHover={{scale:1.1}}
+              transition={{type:"spring",stiffness:500}}>
                   <NavLink
                     to="/resources"
                     className={({isActive}) => ` transition hover:text-amber-700 ${isActive ? "text-amber-900" : "text-zinc-800"}`}
@@ -87,9 +92,10 @@ function Header() {
                     {" "}
                     Resources{" "}
                   </NavLink>
-                </li>
+                </motion.li>
 
-               <li>
+               <motion.li whileHover={{scale:1.1}}
+              transition={{type:"spring",stiffness:500}}>
                   <NavLink
                     className={({isActive}) => ` transition hover:text-amber-700 ${isActive ? "text-amber-900" : "text-zinc-800"}`}
                     to="/events"
@@ -97,7 +103,7 @@ function Header() {
                     {" "}
                     Events{" "}
                   </NavLink>
-                </li>
+                </motion.li>
               </ul>
             </nav>
 

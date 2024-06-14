@@ -10,7 +10,7 @@ import 'swiper/css/scrollbar';
 
 function Carousel({value}) {
   return (
-    <div className="flex justify-center px-4 pt-8 md:px-12 lg:px-24 xl:px-32 ">
+    <div className="flex justify-center px-4 md:px-12 lg:px-24 xl:px-32 ">
         <div className="w-full lg:w-[1200px] relative">
         {value.length > 0 ? (
           <Swiper className="mySwiper"
